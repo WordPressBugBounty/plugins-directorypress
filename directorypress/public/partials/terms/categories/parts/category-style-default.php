@@ -25,11 +25,17 @@
 					}else{
 						$more_cat_icon = '';
 					} 
-							
+					
 					// term wrapper
 					echo '<div class="directorypress-category-item col-lg-' . esc_attr($instance->col) . ' col-md-' . esc_attr($instance->col_tab) . ' col-sm-' . esc_attr($instance->col_mobile) . '">';
 						echo '<div id="cat-wrapper-'. esc_attr($term->term_id) .'" class="directorypress-category-holder clearfix">';		
-							echo '<div class="directorypress-parent-category"><a href="' . esc_url(get_term_link($term)) . '" title="' . esc_attr($term->name) . '">' . wp_kses_post($instance->termIcon($term->term_id)) .'<span class="categories-name">'. esc_html($term->name) .'</span><span class="categories-count">'. esc_attr($instance->renderTermCount($term)) . '</span></a></div>';
+							echo '<div class="directorypress-parent-category">';
+								echo '<a href="' . esc_url(get_term_link($term)) . '" title="' . esc_attr($term->name) . '">';
+									echo wp_kses_post($instance->termIcon($term->term_id));
+									echo '<span class="categories-name">'. esc_html($term->name) .'</span>';
+									if ($instance->count) { echo '<span class="categories-count">'. esc_attr($instance->renderTermCount($term)) . '</span>'; }
+								echo '</a>';
+							echo '</div>';
 							if($instance->depth > 1){
 								echo wp_kses_post($instance->_display($term->term_id, $instance->depth));
 							}

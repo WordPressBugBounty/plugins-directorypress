@@ -54,7 +54,7 @@
 				$('.directorypress-upload-item.cover_image').fileupload({
 					sequentialUploads: true,
 					dataType: 'json',
-					url: '<?php echo esc_url(admin_url('admin-ajax.php?action=directorypress_upload_image&post_id='. esc_attr($listing->post->ID) .'&_wpnonce='.wp_create_nonce('upload_images'))); ?>',
+					url: '<?php echo esc_url(admin_url('admin-ajax.php')).'?action=directorypress_upload_image&post_id='. esc_attr($listing->post->ID) .'&_wpnonce='.esc_js(wp_create_nonce('upload_images')); ?>',
 					dropZone: $('.directorypress-drop-attached-item.cover_image'),
 					add: function (e, data) {
 						const bytes = directorypress_js_instance.max_attchment_size * 1024;

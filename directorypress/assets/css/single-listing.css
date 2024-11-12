@@ -1435,7 +1435,8 @@ html.remodal-is-locked {
 	margin-right:5px;
 }
 .single-listing .directorypress-field-type-content .field-content,
-.single-listing .directorypress-field-type-summary .field-content{
+.single-listing .directorypress-field-type-summary .field-content,
+.single-listing .directorypress-field-type-textarea .field-content{
 	width:100%;
 	display:block;
 }
@@ -1795,15 +1796,20 @@ ul.directorypress-listing-tabs.nav {
 	
 }
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-content,
-.single-listing.single-style2 .directorypress-single-listing-text-content-wrap .directorypress-field-item.directorypress-field-type-content {
+.single-listing.single-style2 .directorypress-single-listing-text-content-wrap .directorypress-field-item.directorypress-field-type-content,
+.directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-textarea,
+.single-listing.single-style2 .directorypress-single-listing-text-content-wrap .directorypress-field-item.directorypress-field-type-textarea {
 	padding-top: 15px;
 }
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-content .field-label,
-.single-listing.single-style2 .directorypress-single-listing-text-content-wrap .directorypress-field-item.directorypress-field-type-content .field-label{
+.single-listing.single-style2 .directorypress-single-listing-text-content-wrap .directorypress-field-item.directorypress-field-type-content .field-label,
+.directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-textarea .field-label,
+.single-listing.single-style2 .directorypress-single-listing-text-content-wrap .directorypress-field-item.directorypress-field-type-textarea .field-label{
 	padding-bottom: 25px;
 	display: block;
 }
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-content .field-label .directorypress-field-title,
+.directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-textarea .field-label .directorypress-field-title,
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-checkbox .field-label .directorypress-field-title,
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-summary .field-label .directorypress-field-title,
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-hours .field-label .directorypress-field-title,
