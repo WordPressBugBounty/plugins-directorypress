@@ -27,7 +27,7 @@
 		};
 
 		window.directorypress_check_images_attachments_number_gallary_images = function() {
-			if (images_allowed_gallary_images > $("#directorypress-images-upload-wrapper.gallery .directorypress-attached-item.gallary_images").length) {
+			if (images_allowed_gallary_images > $("#directorypress-images-upload-wrapper .directorypress-attached-item.gallary_images").length) {
 				<?php if (is_admin()): ?>
 				$("#directorypress-admin-upload-functions.gallary_images").show();
 				<?php else: ?>

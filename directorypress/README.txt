@@ -3,8 +3,8 @@ Contributors: Designinvento
 Donate link: https://designinvento.net/
 Tags: business directory, classified, car dealer, directories, directory listing
 Requires at least: 6.0
-Tested up to: 6.6.2
-Stable tag: 3.6.15
+Tested up to: 6.7
+Stable tag: 3.6.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -235,6 +235,11 @@ Yes DirectoryPress offer most robust front-end user panel with listing managemen
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+= 3.6.16 =
+* frontend listing submit form image upload limit issue resolved.
+* minor fixes
+* translations updated.
+
 = 3.6.15 =
 * frontend listing submit form image upload stop working from 3.6.14 fixed.
 * textarea field alignment issue on single listing page fixed.
