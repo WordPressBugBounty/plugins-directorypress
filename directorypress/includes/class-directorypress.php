@@ -59,7 +59,7 @@ class DirectoryPress {
 		if ( defined( 'DIRECTORYPRESS_VERSION' ) ) {
 			$this->version = DIRECTORYPRESS_VERSION;
 		}else{
-			$this->version = '3.6.16';
+			$this->version = '3.6.17';
 		}
 		$this->plugin_name = 'directorypress';
 		define("DIRECTORYPRESS_OPTIONS_BUILD", $this->plugin_name . '_dirctorypress_options_build');

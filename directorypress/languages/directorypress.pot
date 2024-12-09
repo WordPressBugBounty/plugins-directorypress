@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DirectoryPress Modified\n"
-"POT-Creation-Date: 2024-11-12 23:38+0500\n"
+"POT-Creation-Date: 2024-12-09 23:27+0500\n"
 "PO-Revision-Date: 2020-02-20 16:00+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: directorypress.php\n"
@@ -3214,7 +3214,7 @@ msgstr ""
 
 #: admin/redux-core/inc/extensions/custom_fonts/custom_fonts/class-redux-custom-fonts.php:176
 #: includes/core/fields/_html/fields_backend.php:54
-#: includes/core/terms/categories-functions.php:198
+#: includes/core/terms/categories-functions.php:275
 msgid "Update"
 msgstr ""
 
@@ -3408,10 +3408,10 @@ msgid "Add Icon"
 msgstr ""
 
 #: admin/redux-core/inc/extensions/icon_select/icon_select/class-redux-icon-select.php:243
-#: includes/core/terms/categories-functions.php:225
-#: includes/core/terms/categories-functions.php:250
-#: includes/core/terms/categories-functions.php:275
-#: includes/core/terms/categories-functions.php:300
+#: includes/core/terms/categories-functions.php:302
+#: includes/core/terms/categories-functions.php:327
+#: includes/core/terms/categories-functions.php:352
+#: includes/core/terms/categories-functions.php:377
 msgid "Remove Icon"
 msgstr ""
 
@@ -3601,7 +3601,7 @@ msgid "Text"
 msgstr ""
 
 #: admin/redux-core/inc/extensions/social_profiles/social_profiles/class-redux-social-profiles.php:260
-#: includes/core/terms/categories-functions.php:86 includes/css_editor.php:89
+#: includes/core/terms/categories-functions.php:137 includes/css_editor.php:89
 #: includes/elementor/directorypress-locations.php:354
 msgid "Background"
 msgstr ""
@@ -5216,7 +5216,7 @@ msgstr ""
 
 #: includes/core/fields/_html/fields_backend.php:55
 #: includes/core/listing/functions.php:672
-#: includes/core/terms/categories-functions.php:199
+#: includes/core/terms/categories-functions.php:276
 msgid "Close"
 msgstr ""
 
@@ -6658,62 +6658,62 @@ msgstr ""
 msgid "seperate input field"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:24
-#: includes/core/terms/categories-functions.php:93
-#: includes/core/terms/categories-functions.php:163
+#: includes/core/terms/categories-functions.php:49
+#: includes/core/terms/categories-functions.php:144
+#: includes/core/terms/categories-functions.php:240
 msgid "Image Icon (Display on Category)"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:28
-#: includes/core/terms/categories-functions.php:99
-#: includes/core/terms/categories-functions.php:167
+#: includes/core/terms/categories-functions.php:53
+#: includes/core/terms/categories-functions.php:150
+#: includes/core/terms/categories-functions.php:244
 msgid "Image Icon (Display on Listings)"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:32
-#: includes/core/terms/categories-functions.php:105
-#: includes/core/terms/categories-functions.php:171
+#: includes/core/terms/categories-functions.php:57
+#: includes/core/terms/categories-functions.php:156
+#: includes/core/terms/categories-functions.php:248
 msgid "Image Icon (Display on Map)"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:36
-#: includes/core/terms/categories-functions.php:115
-#: includes/core/terms/categories-functions.php:175
+#: includes/core/terms/categories-functions.php:61
+#: includes/core/terms/categories-functions.php:166
+#: includes/core/terms/categories-functions.php:252
 #: includes/directorypress_vc_config.php:1263
 msgid "Background Image"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:40
-#: includes/core/terms/categories-functions.php:109
-#: includes/core/terms/categories-functions.php:179
+#: includes/core/terms/categories-functions.php:65
+#: includes/core/terms/categories-functions.php:160
+#: includes/core/terms/categories-functions.php:256
 msgid "Font Icon (Display on Map or Categories)"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:41
-#: includes/core/terms/categories-functions.php:110
-#: includes/core/terms/categories-functions.php:180
+#: includes/core/terms/categories-functions.php:66
+#: includes/core/terms/categories-functions.php:161
+#: includes/core/terms/categories-functions.php:257
 msgid "Insert Icon Class"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:44
-#: includes/core/terms/categories-functions.php:121
-#: includes/core/terms/categories-functions.php:183
+#: includes/core/terms/categories-functions.php:69
+#: includes/core/terms/categories-functions.php:172
+#: includes/core/terms/categories-functions.php:260
 msgid "Category Color to use with font icons"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:83
+#: includes/core/terms/categories-functions.php:134
 msgid "Term Icon"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:84
+#: includes/core/terms/categories-functions.php:135
 msgid "Listing Icon"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:85
+#: includes/core/terms/categories-functions.php:136
 msgid "Map Icon"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:87
+#: includes/core/terms/categories-functions.php:138
 #: includes/elementor/directorypress-categories.php:1041
 #: includes/elementor/directorypress-listing.php:798
 #: includes/elementor/directorypress-terms.php:195
@@ -6721,27 +6721,27 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:224
-#: includes/core/terms/categories-functions.php:249
-#: includes/core/terms/categories-functions.php:274
-#: includes/core/terms/categories-functions.php:299
+#: includes/core/terms/categories-functions.php:301
+#: includes/core/terms/categories-functions.php:326
+#: includes/core/terms/categories-functions.php:351
+#: includes/core/terms/categories-functions.php:376
 msgid "Select Icon"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:228
-msgid "Select a categoory icon to show on categories"
+#: includes/core/terms/categories-functions.php:305
+msgid "Select a category icon to show on categories"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:253
+#: includes/core/terms/categories-functions.php:330
 msgid "Select a categoory icon to show on Listing"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:278
-#: includes/core/terms/categories-functions.php:303
+#: includes/core/terms/categories-functions.php:355
+#: includes/core/terms/categories-functions.php:380
 msgid "Select a categoory icon to show on map"
 msgstr ""
 
-#: includes/core/terms/categories-functions.php:338
+#: includes/core/terms/categories-functions.php:415
 msgid "updated successfully"
 msgstr ""
 

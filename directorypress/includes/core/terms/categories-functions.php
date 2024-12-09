@@ -18,23 +18,48 @@ add_action('wp_ajax_directorypress_save_category_fields_ajax', 'directorypress_s
 
 // Add Category Fields
 function directorypress_category_add_fields( $term ) {
-	
+	$allowed_html = array(
+		'input' => array(
+			'type'      => array(),
+			'name'      => array(),
+			'value'     => array(),
+			'checked'   => array(),
+			'data' => array(),
+			'style' => array()
+			
+		),
+		'div' => array(
+			'class'      => array(),
+			'id'      => array(),
+			'data-field' => array()
+		),
+		'button' => array(
+			'class'      => array(),
+			'id'      => array(),
+			'type'      => array(),
+		),
+		'img' => array(
+			'src'      => array(),
+			'id'      => array(),
+			'class'      => array(),
+		),
+	);
 	?>
 	<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 		<label for="directorypress_category_icon"><?php esc_html_e( 'Image Icon (Display on Category)', 'geodirectory' ); ?></label>
-        <?php echo wp_kses_post(directorypress_render_cat_icon()); ?>
+        <?php echo wp_kses(directorypress_render_cat_icon(), $allowed_html); ?>
     </div>
 	<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 		<label for="directorypress_category_icon_for_listing"><?php esc_html_e( 'Image Icon (Display on Listings)', 'geodirectory' ); ?></label>
-        <?php echo wp_kses_post(directorypress_render_cat_icon_for_listing()); ?>
+        <?php echo wp_kses(directorypress_render_cat_icon_for_listing(), $allowed_html); ?>
     </div>
 	<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 		<label for="directorypress_category_icon_for_map"><?php esc_html_e( 'Image Icon (Display on Map)', 'geodirectory' ); ?></label>
-        <?php echo wp_kses_post(directorypress_render_cat_icon_for_map()); ?>
+        <?php echo wp_kses(directorypress_render_cat_icon_for_map(), $allowed_html); ?>
     </div>
 	<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 		<label for="directorypress_category_background_image"><?php esc_html_e( 'Background Image', 'geodirectory' ); ?></label>
-        <?php echo wp_kses_post(directorypress_render_cat_bg_image()); ?>
+        <?php echo wp_kses(directorypress_render_cat_bg_image(), $allowed_html); ?>
     </div>
 	<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 		<label for="directorypress_category_font_icon"><?php esc_html_e( 'Font Icon (Display on Map or Categories)', 'geodirectory' ); ?></label>
@@ -58,6 +83,32 @@ function directorypress_terms_configuration_html($term_id) {
 	$directorypress_category_background_image = get_term_meta( $term->term_id, 'category-image-id', true );
 	$directorypress_category_font_icon = get_term_meta( $term->term_id, 'directorypress_category_font_icon', true );
 	$directorypress_category_color = get_term_meta( $term->term_id, 'marker_color', true );
+	$allowed_html = array(
+		'input' => array(
+			'type'      => array(),
+			'name'      => array(),
+			'value'     => array(),
+			'checked'   => array(),
+			'data' => array(),
+			'style' => array()
+			
+		),
+		'div' => array(
+			'class'      => array(),
+			'id'      => array(),
+			'data-field' => array()
+		),
+		'button' => array(
+			'class'      => array(),
+			'id'      => array(),
+			'type'      => array(),
+		),
+		'img' => array(
+			'src'      => array(),
+			'id'      => array(),
+			'class'      => array(),
+		),
+	);
 	if ( !empty( $directorypress_category_icon['id'] ) ) {
 		$directorypress_category_icon['full'] = wp_get_attachment_image ( $directorypress_category_icon, 'full' );
 	}
@@ -91,19 +142,19 @@ function directorypress_terms_configuration_html($term_id) {
 				<div class="tab-pane fade active show" id="term-icon">
 					<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 						<div scope="row"><label for="directorypress_category_icon"><?php esc_html_e( 'Image Icon (Display on Category)', 'DIRECTORYPRESS' ); ?></label></div>
-						 <div><?php echo wp_kses_post(directorypress_render_cat_icon( $directorypress_category_icon )); ?></div>
+						 <div><?php echo wp_kses(directorypress_render_cat_icon( $directorypress_category_icon ), $allowed_html); ?></div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="listing-icon">
 					<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 						<div scope="row"><label for="directorypress_category_icon_for_listing"><?php esc_html_e( 'Image Icon (Display on Listings)', 'DIRECTORYPRESS' ); ?></label></div>
-						 <div><?php echo wp_kses_post(directorypress_render_cat_icon_for_listing( $directorypress_category_icon_for_listing )); ?></div>
+						 <div><?php echo wp_kses(directorypress_render_cat_icon_for_listing( $directorypress_category_icon_for_listing ), $allowed_html); ?></div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="map-icon">
 					<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 						<div scope="row"><label for="directorypress_category_icon_for_map"><?php esc_html_e( 'Image Icon (Display on Map)', 'DIRECTORYPRESS' ); ?></label></div>
-						 <div><?php echo wp_kses_post(directorypress_render_cat_icon_for_map( $directorypress_category_icon_for_map )); ?></div>
+						 <div><?php echo wp_kses(directorypress_render_cat_icon_for_map( $directorypress_category_icon_for_map ), $allowed_html); ?></div>
 					</div>
 					<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 						<div scope="row"><label for="directorypress_category_font_icon"><?php esc_html_e( 'Font Icon (Display on Map or Categories)', 'DIRECTORYPRESS' ); ?></label></div>
@@ -113,7 +164,7 @@ function directorypress_terms_configuration_html($term_id) {
 				<div class="tab-pane fade" id="backgroubd-image">
 					<div class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 						<div scope="row"><label for="directorypress_category_background_image"><?php esc_html_e( 'Background Image', 'DIRECTORYPRESS' ); ?></label></div>
-						 <div><?php echo wp_kses_post(directorypress_render_cat_bg_image( $directorypress_category_background_image )); ?></div>
+						 <div><?php echo wp_kses(directorypress_render_cat_bg_image( $directorypress_category_background_image ), $allowed_html); ?></div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="term-color">
@@ -139,6 +190,32 @@ function directorypress_category_edit_fields($term, $taxonomy ) {
 	$directorypress_category_background_image = get_term_meta( $term->term_id, 'category-image-id', true );
 	$directorypress_category_font_icon = get_term_meta( $term->term_id, 'directorypress_category_font_icon', true );
 	$directorypress_category_color = get_term_meta( $term->term_id, 'marker_color', true );
+	$allowed_html = array(
+		'input' => array(
+			'type'      => array(),
+			'name'      => array(),
+			'value'     => array(),
+			'checked'   => array(),
+			'data' => array(),
+			'style' => array()
+			
+		),
+		'div' => array(
+			'class'      => array(),
+			'id'      => array(),
+			'data-field' => array()
+		),
+		'button' => array(
+			'class'      => array(),
+			'id'      => array(),
+			'type'      => array(),
+		),
+		'img' => array(
+			'src'      => array(),
+			'id'      => array(),
+			'class'      => array(),
+		),
+	);
 	if ( !empty( $directorypress_category_icon['id'] ) ) {
 		$directorypress_category_icon['full'] = wp_get_attachment_image ( $directorypress_category_icon, 'full' );
 	}
@@ -161,19 +238,19 @@ function directorypress_category_edit_fields($term, $taxonomy ) {
 	?>
 	<tr class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
         <th scope="row"><label for="directorypress_category_icon"><?php esc_html_e( 'Image Icon (Display on Category)', 'DIRECTORYPRESS' ); ?></label></th>
-         <td><?php echo wp_kses_post(directorypress_render_cat_icon( $directorypress_category_icon )); ?></td>
+         <td><?php echo wp_kses(directorypress_render_cat_icon( $directorypress_category_icon ), $allowed_html); ?></td>
     </tr>
 	<tr class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
         <th scope="row"><label for="directorypress_category_icon_for_listing"><?php esc_html_e( 'Image Icon (Display on Listings)', 'DIRECTORYPRESS' ); ?></label></th>
-         <td><?php echo wp_kses_post(directorypress_render_cat_icon_for_listing( $directorypress_category_icon_for_listing )); ?></td>
+         <td><?php echo wp_kses(directorypress_render_cat_icon_for_listing( $directorypress_category_icon_for_listing ), $allowed_html); ?></td>
     </tr>
 	<tr class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
         <th scope="row"><label for="directorypress_category_icon_for_map"><?php esc_html_e( 'Image Icon (Display on Map)', 'DIRECTORYPRESS' ); ?></label></th>
-         <td><?php echo wp_kses_post(directorypress_render_cat_icon_for_map( $directorypress_category_icon_for_map )); ?></td>
+         <td><?php echo wp_kses(directorypress_render_cat_icon_for_map( $directorypress_category_icon_for_map ), $allowed_html); ?></td>
     </tr>
 	<tr class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
         <th scope="row"><label for="directorypress_category_background_image"><?php esc_html_e( 'Background Image', 'DIRECTORYPRESS' ); ?></label></th>
-         <td><?php echo wp_kses_post(directorypress_render_cat_bg_image( $directorypress_category_background_image )); ?></td>
+         <td><?php echo wp_kses(directorypress_render_cat_bg_image( $directorypress_category_background_image ), $allowed_html); ?></td>
     </tr>
 	<tr class="form-field term-ct_cat_icon-wrap directorypress-term-form-field">
 		<th for="directorypress_category_font_icon"><?php esc_html_e( 'Font Icon (Display on Map or Categories)', 'DIRECTORYPRESS' ); ?></th>
@@ -225,7 +302,7 @@ function directorypress_render_cat_icon( $cat_icon = array(), $id = 'directorypr
                 <button type="button" class="directorypress_remove_image_button button"><?php esc_html_e( 'Remove Icon', 'DIRECTORYPRESS' ); ?></button>
             </div>
         </div>
-        <p class="description clear"><?php esc_html_e( 'Select a categoory icon to show on categories', 'DIRECTORYPRESS' ); ?></p>
+        <p class="description clear"><?php esc_html_e( 'Select a category icon to show on categories', 'DIRECTORYPRESS' ); ?></p>
         <?php
         return ob_get_clean();
 }

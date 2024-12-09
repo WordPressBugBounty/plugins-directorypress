@@ -1,5 +1,5 @@
 <?php
-$wordpress_version = get_bloginfo('version');
+
 
 function directorypress_allow_svg_uploads( $existing_mime_types = array() ) {
 	return $existing_mime_types + array( 'svg' => 'image/svg+xml' );
@@ -68,12 +68,17 @@ function directorypress_disable_real_mime_check( $data, $file, $filename, $mimes
 	return compact( 'ext', 'type', 'proper_filename' );
 }
 
-if($wordpress_version < "4.7.3") {
-	add_filter( 'wp_check_filetype_and_ext', 'directorypress_disable_real_mime_check', 10, 4 );
-}
-add_filter( 'upload_mimes', 'directorypress_allow_svg_uploads' );
-add_filter( 'wp_prepare_attachment_for_js', 'directorypress_set_dimensions', 10, 3 );
-add_action( 'admin_enqueue_scripts', 'directorypress_administration_styles' );
-add_action( 'wp_head', 'directorypress_public_styles' );
 
-?>
+function directorypress_init_svg_support(){
+	$wordpress_version = get_bloginfo('version');
+	if(is_admin() && current_user_can('administrator')){
+		if($wordpress_version < "4.7.3") {
+			add_filter( 'wp_check_filetype_and_ext', 'directorypress_disable_real_mime_check', 10, 4 );
+		}
+		add_filter( 'upload_mimes', 'directorypress_allow_svg_uploads' );
+		add_filter( 'wp_prepare_attachment_for_js', 'directorypress_set_dimensions', 10, 3 );
+		add_action( 'admin_enqueue_scripts', 'directorypress_administration_styles' );
+		add_action( 'wp_head', 'directorypress_public_styles' );
+	}
+}
+add_action( 'admin_init', 'directorypress_init_svg_support' );

@@ -4,7 +4,7 @@ Donate link: https://designinvento.net/
 Tags: business directory, classified, car dealer, directories, directory listing
 Requires at least: 6.0
 Tested up to: 6.7
-Stable tag: 3.6.16
+Stable tag: 3.6.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -235,6 +235,12 @@ Yes DirectoryPress offer most robust front-end user panel with listing managemen
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+= 3.6.17 =
+* category icons upload issue fixed.
+* svg support restricted to administrator only.
+* translations updated.
+* minor fixes
+
 = 3.6.16 =
 * frontend listing submit form image upload limit issue resolved.
 * minor fixes
