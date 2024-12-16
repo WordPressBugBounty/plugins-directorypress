@@ -185,7 +185,7 @@ class DirectoryPress_Elementor_Terms_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'title_typography',
 				'label' => esc_html__( 'Title Typography', 'DIRECTORYPRESS' ),
-				'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+				//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .terms-list-item a',
 			]
 		);
@@ -238,7 +238,7 @@ class DirectoryPress_Elementor_Terms_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'title_typography_hover',
 				'label' => esc_html__( 'Title Typography', 'DIRECTORYPRESS' ),
-				'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+				//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .terms-list-item:hover a',
 			]
 		);

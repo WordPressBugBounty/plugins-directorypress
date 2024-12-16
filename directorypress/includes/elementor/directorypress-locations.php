@@ -253,7 +253,7 @@ class DirectoryPress_Elementor_Location_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'content_typography',
 				'label' => esc_html__( 'Title Typography', 'DIRECTORYPRESS' ),
-				'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+				//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 				/* 'selectors' => [
 					'{{WRAPPER}} .directorypress-parent-location a',
 					'{{WRAPPER}} .location-style7 .directorypress-location-item .directorypress-location-item-holder .directorypress-parent-location a',
@@ -305,7 +305,7 @@ class DirectoryPress_Elementor_Location_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'sub_content_typography',
 				'label' => esc_html__( 'Title Typography', 'DIRECTORYPRESS' ),
-				'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+				//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .sublocations a',
 			]
 		);

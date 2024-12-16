@@ -622,7 +622,7 @@ class DirectoryPress_Elementor_Category_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'item_typography',
 				'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-				'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+				//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .directorypress-category-holder .directorypress-parent-category a',
 			]
 		);
@@ -975,7 +975,7 @@ class DirectoryPress_Elementor_Category_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'slider_arrow_typography',
 				'label' => esc_html__( 'Title Typography', 'DIRECTORYPRESS' ),
-				'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+				//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .listing-pre, {{WRAPPER}} .listing-next',
 			]
 		);

@@ -1005,7 +1005,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 				[
 					'name' => 'field_placehoder_typography',
 					'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-					'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+					//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .directorypress-search-form .directorypress-search-holder .form-control,
 					{{WRAPPER}} .directorypress-search-holder .select2-selection--single,
 					{{WRAPPER}} .directorypress-search-holder .select2-container--default .select2-selection--single',
@@ -1024,7 +1024,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 				[
 					'name' => 'field_label_typography',
 					'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-					'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+					//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .directorypress-search-form label',
 				]
 			);
@@ -1306,7 +1306,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 				[
 					'name' => 'keyword_field_placehoder_typography',
 					'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-					'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+					//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .directorypress-search-form .directorypress-search-holder .keyword-search .form-control',
 				]
 			);
@@ -1323,7 +1323,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 				[
 					'name' => 'keyword_field_label_typography',
 					'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-					'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+					//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .directorypress-search-form .keyword-search label',
 				]
 			);
@@ -1621,7 +1621,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 					[
 						'name' => 'category_field_placehoder_typography',
 						'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-						'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+						//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 						'selector' => '{{WRAPPER}} .directorypress-search-form .directorypress-search-holder .category-search .form-control',
 					]
 				);
@@ -1638,7 +1638,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 					[
 						'name' => 'category_field_label_typography',
 						'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-						'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+						//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 						'selector' => '{{WRAPPER}} .directorypress-search-form .category-search label',
 					]
 				);
@@ -1919,7 +1919,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 					[
 						'name' => 'address_field_placehoder_typography',
 						'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-						'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+						//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 						'selector' => '{{WRAPPER}} .directorypress-search-form .directorypress-search-holder .address-search .form-control',
 					]
 				);
@@ -1936,7 +1936,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 					[
 						'name' => 'address_field_label_typography',
 						'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-						'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+						//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 						'selector' => '{{WRAPPER}} .directorypress-search-form .address-search label',
 					]
 				);
@@ -2031,7 +2031,7 @@ class DirectoryPress_Elementor_Search_Widget extends \Elementor\Widget_Base {
 				[
 					'name' => 'button_typography',
 					'label' => esc_html__( 'Typography', 'DIRECTORYPRESS' ),
-					'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
+					//'scheme' => \Elementor\Core\Schemes\Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .directorypress-search-holder .directorypress-search-form-button button.btn',
 				]
 			);
