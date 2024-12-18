@@ -107,7 +107,7 @@
 						directorypress_pagination_display($public_handler->query, $public_handler->hash, $DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_show_more_button'], $public_handler);
 					}
 				}else{
-					printf(esc_html__('Found <span class="badge text-bg-secondary">%d</span> %s', "DIRECTORYPRESS"), esc_attr($public_handler->query->found_posts), esc_attr(_n($public_handler->directorypress_get_directoytype_of_listing()->single, $public_handler->directorypress_get_directoytype_of_listing()->plural, $public_handler->query->found_posts)));
+					printf(esc_html__('Found %s %s', "DIRECTORYPRESS"), '<span class="badge text-bg-secondary">'. esc_attr($public_handler->query->found_posts) .'</span>', esc_attr(_n($public_handler->directorypress_get_directoytype_of_listing()->single, $public_handler->directorypress_get_directoytype_of_listing()->plural, $public_handler->query->found_posts)));
 				}
 			echo '</div>';
 		}
