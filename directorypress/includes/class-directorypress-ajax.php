@@ -134,7 +134,7 @@ class directorypress_ajax {
 
 				$directorypress_handler = new directorypress_public();
 				$directorypress_handler->init($_POST);
-				$directorypress_handler->hash = $_POST['hash'];
+				$directorypress_handler->hash = sanitize_text_field($_POST['hash']);
 				$directorypress_handler->args = $shortcode_atts;
 				$directorypress_handler->directorypress_client = 'directorypress_listings_handler';
 				$directorypress_handler->custom_home = (isset($shortcode_atts['custom_home']) && $shortcode_atts['custom_home']);
