@@ -261,9 +261,9 @@ function directorypress_countrycodes() {
 
 function directorypress_map_type() {
 	global $DIRECTORYPRESS_ADIMN_SETTINGS;
-	if ($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_map_type'] == 'mapbox') {
+	if (isset($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_map_type']) && $DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_map_type'] == 'mapbox') {
 		return 'mapbox';
-	}elseif ($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_map_type'] == 'google') {
+	}elseif (isset($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_map_type']) && $DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_map_type'] == 'google') {
 		return 'google';
 	}else{
 		return 'mapbox';

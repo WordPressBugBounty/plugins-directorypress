@@ -10,6 +10,7 @@
 							<p><?php esc_html_e('You can create unlimited fields as per your requirements', 'DIRECTORYPRESS'); ?></p>
 							<?php echo '<a class="dp-admin-btn dp-success directorypress-field-action-link" data-action="create_field" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" data-title="'. esc_attr__('Create  New Field:', 'DIRECTORYPRESS') .'" href="#">' . esc_html__('Create New Field', 'directorypress-extended-locations') . '</a>'; ?>
 							<?php echo '<a class="dp-admin-btn dp-success directorypress-field-action-link" data-action="create_group" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" data-title="'. esc_attr__('Create  New Group:', 'DIRECTORYPRESS') .'" href="#">' . esc_html__('Create New Group', 'directorypress-extended-locations') . '</a>'; ?>
+							<a href="https://www.youtube.com/@DesigninventoSupport/videos" target="_blank" style="width:200px;margin:40px auto 0;display:block;"><img src="<?php echo esc_url(DIRECTORYPRESS_RESOURCES_URL .'images/vt.jpg'); ?>" alt="<?php esc_attr_e('tutorials', 'DIRECTORYPRESS'); ?>" /></a>
 						</div>
 						<div class="directorypress-box-content wp-clearfix">
 							<div class="directorypress-manager-page-wrap">

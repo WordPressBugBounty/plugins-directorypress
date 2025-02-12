@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DirectoryPress Modified\n"
-"POT-Creation-Date: 2024-12-09 23:27+0500\n"
+"POT-Creation-Date: 2025-02-13 01:22+0500\n"
 "PO-Revision-Date: 2020-02-20 16:00+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -82,6 +82,10 @@ msgstr ""
 
 #: admin/functions.php:79
 msgid "All DirectoryPress Settings can be handle here"
+msgstr ""
+
+#: admin/functions.php:80 includes/core/fields/_html/fields_backend.php:13
+msgid "tutorials"
 msgstr ""
 
 #: admin/partials/addons.php:17
@@ -423,7 +427,7 @@ msgid "StumbleUpon"
 msgstr ""
 
 #: admin/redux-core/directorypress-settings.php:432
-#: includes/core/fields/class_fields.php:34 includes/user-functions.php:227
+#: includes/core/fields/class_fields.php:34 includes/user-functions.php:231
 msgid "Email"
 msgstr ""
 
@@ -3213,7 +3217,7 @@ msgid "Choose Font file or ZIP of font files."
 msgstr ""
 
 #: admin/redux-core/inc/extensions/custom_fonts/custom_fonts/class-redux-custom-fonts.php:176
-#: includes/core/fields/_html/fields_backend.php:54
+#: includes/core/fields/_html/fields_backend.php:55
 #: includes/core/terms/categories-functions.php:275
 msgid "Update"
 msgstr ""
@@ -3555,7 +3559,7 @@ msgstr ""
 #: admin/redux-core/inc/fields/slides/class-redux-slides.php:128
 #: admin/redux-core/inc/fields/slides/class-redux-slides.php:263
 #: includes/core/listing/functions.php:257 includes/core/listing/functions.php:327
-#: includes/core/widgets/directorypress-widgets-author.php:244
+#: includes/core/widgets/directorypress-widgets-author.php:246
 #: includes/core/widgets/directorypress_widget.php:11
 msgid "Title"
 msgstr ""
@@ -4023,7 +4027,7 @@ msgstr ""
 
 #: admin/redux-core/inc/fields/background/class-redux-background.php:203
 #: includes/core/fields/price/_html/input.php:40
-#: includes/core/fields/price/price.php:339 includes/core/fields/price/price.php:347
+#: includes/core/fields/price/price.php:341 includes/core/fields/price/price.php:349
 msgid "Fixed"
 msgstr ""
 
@@ -4264,12 +4268,12 @@ msgid "Active Background Color"
 msgstr ""
 
 #: admin/redux-core/inc/fields/password/class-redux-password.php:53
-#: includes/user-functions.php:94 includes/user-functions.php:242
+#: includes/user-functions.php:98 includes/user-functions.php:246
 msgid "Password"
 msgstr ""
 
 #: admin/redux-core/inc/fields/password/class-redux-password.php:54
-#: includes/user-functions.php:93 includes/user-functions.php:224
+#: includes/user-functions.php:97 includes/user-functions.php:228
 msgid "Username"
 msgstr ""
 
@@ -5200,21 +5204,21 @@ msgstr ""
 msgid "Create New Group"
 msgstr ""
 
-#: includes/core/fields/_html/fields_backend.php:18
+#: includes/core/fields/_html/fields_backend.php:19
 #: includes/core/fields/class_fields_backend.php:26
 #: includes/core/fields/class_fields_backend.php:27
 msgid "Fields"
 msgstr ""
 
-#: includes/core/fields/_html/fields_backend.php:19
+#: includes/core/fields/_html/fields_backend.php:20
 msgid "Groups"
 msgstr ""
 
-#: includes/core/fields/_html/fields_backend.php:24
+#: includes/core/fields/_html/fields_backend.php:25
 msgid "Fields order can be changed by drag & drop."
 msgstr ""
 
-#: includes/core/fields/_html/fields_backend.php:55
+#: includes/core/fields/_html/fields_backend.php:56
 #: includes/core/listing/functions.php:672
 #: includes/core/terms/categories-functions.php:276
 msgid "Close"
@@ -5455,13 +5459,13 @@ msgstr ""
 
 #: includes/core/fields/class_fields_backend.php:119
 #: includes/core/fields/class_fields_backend.php:120
-#: includes/core/widgets/directorypress-widgets-author.php:259
-#: includes/core/widgets/directorypress-widgets-author.php:266
-#: includes/core/widgets/directorypress-widgets-author.php:273
-#: includes/core/widgets/directorypress-widgets-author.php:280
-#: includes/core/widgets/directorypress-widgets-author.php:287
-#: includes/core/widgets/directorypress-widgets-author.php:294
-#: includes/core/widgets/directorypress-widgets-author.php:301
+#: includes/core/widgets/directorypress-widgets-author.php:261
+#: includes/core/widgets/directorypress-widgets-author.php:268
+#: includes/core/widgets/directorypress-widgets-author.php:275
+#: includes/core/widgets/directorypress-widgets-author.php:282
+#: includes/core/widgets/directorypress-widgets-author.php:289
+#: includes/core/widgets/directorypress-widgets-author.php:296
+#: includes/core/widgets/directorypress-widgets-author.php:303
 #: includes/core/widgets/directorypress_adverts.php:54
 #: includes/core/widgets/directorypress_adverts.php:74
 #: includes/core/widgets/directorypress_adverts.php:99
@@ -5953,12 +5957,12 @@ msgid "Price Options"
 msgstr ""
 
 #: includes/core/fields/price/_html/input.php:41
-#: includes/core/fields/price/price.php:341
+#: includes/core/fields/price/price.php:343
 msgid "Negotiable"
 msgstr ""
 
 #: includes/core/fields/price/_html/input.php:42
-#: includes/core/fields/price/price.php:327 includes/core/fields/price/price.php:404
+#: includes/core/fields/price/price.php:329 includes/core/fields/price/price.php:406
 msgid "On Call"
 msgstr ""
 
@@ -5970,7 +5974,7 @@ msgstr ""
 msgid "Has Frontend Currency"
 msgstr ""
 
-#: includes/core/fields/price/price.php:343
+#: includes/core/fields/price/price.php:345
 msgid "Oncall"
 msgstr ""
 
@@ -6932,34 +6936,34 @@ msgstr ""
 msgid "The %s field must contain a number greater than %s."
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:248
+#: includes/core/widgets/directorypress-widgets-author.php:250
 #: includes/core/widgets/directorypress-widgets-price.php:62
 msgid "Style:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:250
+#: includes/core/widgets/directorypress-widgets-author.php:252
 msgid "One"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:251
+#: includes/core/widgets/directorypress-widgets-author.php:253
 msgid "Two"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:252
+#: includes/core/widgets/directorypress-widgets-author.php:254
 msgid "Three"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:256
+#: includes/core/widgets/directorypress-widgets-author.php:258
 msgid "Show Phone Number:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:258
-#: includes/core/widgets/directorypress-widgets-author.php:265
-#: includes/core/widgets/directorypress-widgets-author.php:272
-#: includes/core/widgets/directorypress-widgets-author.php:279
-#: includes/core/widgets/directorypress-widgets-author.php:286
-#: includes/core/widgets/directorypress-widgets-author.php:293
-#: includes/core/widgets/directorypress-widgets-author.php:300
+#: includes/core/widgets/directorypress-widgets-author.php:260
+#: includes/core/widgets/directorypress-widgets-author.php:267
+#: includes/core/widgets/directorypress-widgets-author.php:274
+#: includes/core/widgets/directorypress-widgets-author.php:281
+#: includes/core/widgets/directorypress-widgets-author.php:288
+#: includes/core/widgets/directorypress-widgets-author.php:295
+#: includes/core/widgets/directorypress-widgets-author.php:302
 #: includes/core/widgets/directorypress_adverts.php:54
 #: includes/core/widgets/directorypress_adverts.php:74
 #: includes/core/widgets/directorypress_adverts.php:99
@@ -7067,123 +7071,123 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:263
+#: includes/core/widgets/directorypress-widgets-author.php:265
 msgid "Show Whatsapp Number:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:270
+#: includes/core/widgets/directorypress-widgets-author.php:272
 msgid "Show Email Id:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:277
+#: includes/core/widgets/directorypress-widgets-author.php:279
 msgid "Show Social Links:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:284
+#: includes/core/widgets/directorypress-widgets-author.php:286
 msgid "Show Contact:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:291
+#: includes/core/widgets/directorypress-widgets-author.php:293
 msgid "Show Offer Button:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:298
+#: includes/core/widgets/directorypress-widgets-author.php:300
 msgid "Hide Contact Info from anonymous user:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:305
+#: includes/core/widgets/directorypress-widgets-author.php:307
 msgid "Phone background Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:310
+#: includes/core/widgets/directorypress-widgets-author.php:312
 msgid "Phone background Color Hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:315
+#: includes/core/widgets/directorypress-widgets-author.php:317
 msgid "Phone text Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:320
+#: includes/core/widgets/directorypress-widgets-author.php:322
 msgid "Phone text Color hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:327
+#: includes/core/widgets/directorypress-widgets-author.php:329
 msgid "Whatsapp background Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:332
+#: includes/core/widgets/directorypress-widgets-author.php:334
 msgid "Whatsapp background Color Hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:337
+#: includes/core/widgets/directorypress-widgets-author.php:339
 msgid "Whatsapp text Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:342
+#: includes/core/widgets/directorypress-widgets-author.php:344
 msgid "Whatsapp text Color hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:350
+#: includes/core/widgets/directorypress-widgets-author.php:352
 msgid "Email background Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:355
+#: includes/core/widgets/directorypress-widgets-author.php:357
 msgid "Email background Color Hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:360
+#: includes/core/widgets/directorypress-widgets-author.php:362
 msgid "Email text Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:365
+#: includes/core/widgets/directorypress-widgets-author.php:367
 msgid "Email text Color hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:371
+#: includes/core/widgets/directorypress-widgets-author.php:373
 msgid "Social icon background Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:376
+#: includes/core/widgets/directorypress-widgets-author.php:378
 msgid "Social icon background Color Hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:381
+#: includes/core/widgets/directorypress-widgets-author.php:383
 msgid "Social icons text Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:386
+#: includes/core/widgets/directorypress-widgets-author.php:388
 msgid "Social icons text Color hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:392
+#: includes/core/widgets/directorypress-widgets-author.php:394
 msgid "Contact Button background Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:397
+#: includes/core/widgets/directorypress-widgets-author.php:399
 msgid "Contact Button background Color Hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:402
+#: includes/core/widgets/directorypress-widgets-author.php:404
 msgid "Contact Button text Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:407
+#: includes/core/widgets/directorypress-widgets-author.php:409
 msgid "Contact Button text Color hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:413
+#: includes/core/widgets/directorypress-widgets-author.php:415
 msgid "Offer Button background Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:418
+#: includes/core/widgets/directorypress-widgets-author.php:420
 msgid "Offer Button background Color Hover:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:423
+#: includes/core/widgets/directorypress-widgets-author.php:425
 msgid "Offer Button text Color:"
 msgstr ""
 
-#: includes/core/widgets/directorypress-widgets-author.php:428
+#: includes/core/widgets/directorypress-widgets-author.php:430
 msgid "Offer Button text Color hover:"
 msgstr ""
 
@@ -10103,88 +10107,88 @@ msgstr ""
 msgid "Search tags"
 msgstr ""
 
-#: includes/user-functions.php:95
+#: includes/user-functions.php:99
 msgid "Remember Me"
 msgstr ""
 
-#: includes/user-functions.php:96
+#: includes/user-functions.php:100
 msgid "Login"
 msgstr ""
 
-#: includes/user-functions.php:131 includes/user-functions.php:221
-#: includes/user-functions.php:245
+#: includes/user-functions.php:135 includes/user-functions.php:225
+#: includes/user-functions.php:249
 msgid "Register"
 msgstr ""
 
-#: includes/user-functions.php:134
+#: includes/user-functions.php:138
 msgid "Password Lost and Found"
 msgstr ""
 
-#: includes/user-functions.php:134
+#: includes/user-functions.php:138
 msgid "Reset your password?"
 msgstr ""
 
-#: includes/user-functions.php:146
+#: includes/user-functions.php:150
 msgid "Security token validation failed!"
 msgstr ""
 
-#: includes/user-functions.php:161
+#: includes/user-functions.php:165
 msgid "login successful!"
 msgstr ""
 
-#: includes/user-functions.php:230
+#: includes/user-functions.php:234
 msgid "First Name"
 msgstr ""
 
-#: includes/user-functions.php:233
+#: includes/user-functions.php:237
 msgid "Last Name"
 msgstr ""
 
-#: includes/user-functions.php:236
+#: includes/user-functions.php:240
 msgid "Nickname"
 msgstr ""
 
-#: includes/user-functions.php:239
+#: includes/user-functions.php:243
 msgid "Website"
 msgstr ""
 
-#: includes/user-functions.php:255
+#: includes/user-functions.php:259
 msgid "Required form field is missing"
 msgstr ""
 
-#: includes/user-functions.php:259
+#: includes/user-functions.php:263
 msgid "Username too short. At least 4 characters is required"
 msgstr ""
 
-#: includes/user-functions.php:263
+#: includes/user-functions.php:267
 msgid "Sorry, that username already exists!"
 msgstr ""
 
-#: includes/user-functions.php:266
+#: includes/user-functions.php:270
 msgid "Sorry, the username you entered is not valid"
 msgstr ""
 
-#: includes/user-functions.php:270
+#: includes/user-functions.php:274
 msgid "Password length must be greater than 5"
 msgstr ""
 
-#: includes/user-functions.php:274
+#: includes/user-functions.php:278
 msgid "Email is not valid"
 msgstr ""
 
-#: includes/user-functions.php:278
+#: includes/user-functions.php:282
 msgid "Email Already in use"
 msgstr ""
 
-#: includes/user-functions.php:283
+#: includes/user-functions.php:287
 msgid "Website is not a valid URL"
 msgstr ""
 
-#: includes/user-functions.php:291
+#: includes/user-functions.php:295
 msgid "ERROR"
 msgstr ""
 
-#: includes/user-functions.php:313
+#: includes/user-functions.php:317
 msgid "Registration completed."
 msgstr ""
 
@@ -10882,7 +10886,7 @@ msgstr ""
 
 #: public/partials/listing/wrapper.php:110
 #, php-format
-msgid "Found <span class=\"badge text-bg-secondary\">%d</span> %s"
+msgid "Found %s %s"
 msgstr ""
 
 #: public/partials/locations/child.php:75

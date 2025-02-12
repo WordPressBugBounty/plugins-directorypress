@@ -9,14 +9,18 @@ add_action('user_register', 'directorypress_user_meta');
 
 function directorypress_users_status_init(){
 	$logged_in_users = get_transient('users_status'); 
-	$user = wp_get_current_user();
-	if ( !isset($logged_in_users[$user->ID]['last']) || $logged_in_users[$user->ID]['last'] <= time()-900 ){
-		$logged_in_users[$user->ID] = array(
-			'id' => $user->ID,
-			'username' => $user->user_login,
-			'last' => time(),
-		);
-		set_transient('users_status', $logged_in_users, 900);
+	if($logged_in_users){
+		$user = wp_get_current_user();
+		if ((!isset($logged_in_users[$user->ID]['last']) || $logged_in_users[$user->ID]['last'] <= time()-900) ){
+			if($logged_in_users[$user->ID]){
+				$logged_in_users[$user->ID] = array(
+					'id' => $user->ID,
+					'username' => $user->user_login,
+					'last' => time(),
+				);
+				set_transient('users_status', $logged_in_users, 900);
+			}
+		}
 	}
 }
 

@@ -61,104 +61,106 @@ class Directorypress_Widget_Author extends WP_Widget {
 		
 		$data = $this->get_settings();
 		$instance_id = array_key_first($data);
-		$instance = $this->get_settings()[$instance_id];
-		$id = 'directorypress_author-'. $instance_id;
-		//var_dump($instance['phone_background']);
-		$phone_background = (isset( $instance['phone_background'] ) && !empty( $instance['phone_background'] )) ? ('background:'. $instance['phone_background'] . ';') : '';
-		$phone_background_hover = (isset( $instance['phone_background_hover'] ) && !empty( $instance['phone_background_hover'] )) ? ('background:'. $instance['phone_background_hover'] . ';') : '';
-		$whatsapp_background = (isset( $instance['whatsapp_background'] ) && !empty( $instance['whatsapp_background'] )) ? ('background:'. $instance['whatsapp_background'] . ';') : '';
-		$whatsapp_background_hover = (isset( $instance['whatsapp_background_hover'] ) && !empty( $instance['whatsapp_background_hover'] )) ? ('background:'. $instance['whatsapp_background_hover'] . ';') : '';
-		$email_background = (isset( $instance['email_background'] ) && !empty( $instance['email_background'] )) ? ('background:'. $instance['email_background'] . ';') : '';
-		$email_background_hover = (isset( $instance['email_background_hover'] ) && !empty( $instance['email_background_hover'] )) ? ('background:'. $instance['email_background_hover'] . ';') : '';
-		$social_background = (isset( $instance['social_background'] ) && !empty( $instance['social_background'] )) ? ('background:'. $instance['social_background'] . ';') : '';
-		$social_background_hover = (isset( $instance['social_background_hover'] ) && !empty( $instance['social_background_hover'] )) ? ('background:'. $instance['social_background_hover'] . ';') : '';
-		$contact_btn_background = (isset( $instance['contact_btn_background'] ) && !empty( $instance['contact_btn_background'] )) ? ('background:'. $instance['contact_btn_background'] . ';') : '';
-		$contact_btn_background_hover = (isset( $instance['contact_btn_background_hover'] ) && !empty( $instance['contact_btn_background_hover'] )) ? ('background:'. $instance['contact_btn_background_hover'] . ';') : '';
-		$offer_btn_background = (isset( $instance['offer_btn_background'] ) && !empty( $instance['offer_btn_background'] )) ? ('background:'. $instance['offer_btn_background'] . ';') : '';
-		$offer_btn_background_hover = (isset( $instance['offer_btn_background_hover'] ) && !empty( $instance['offer_btn_background_hover'] )) ? ('background:'. $instance['offer_btn_background_hover'] . ';') : '';
-		
-		$phone_text_color = (isset( $instance['phone_text_color'] ) && !empty( $instance['phone_text_color'] )) ? ('color:'. $instance['phone_text_color'] . ' !important;') : '';
-		$phone_text_color_hover = (isset( $instance['phone_text_color_hover'] ) && !empty( $instance['phone_text_color_hover'] )) ? ('color:'. $instance['phone_text_color_hover'] . ' !important;') : '';
-		$whatsapp_text_color = (isset( $instance['whatsapp_text_color'] ) && !empty( $instance['whatsapp_text_color'] )) ? ('color:'. $instance['whatsapp_text_color'] . ' !important;') : '';
-		$whatsapp_text_color_hover = (isset( $instance['whatsapp_text_color_hover'] ) && !empty( $instance['whatsapp_text_color_hover'] )) ? ('color:'. $instance['whatsapp_text_color_hover'] . ' !important;') : '';
-		$email_text_color = (isset( $instance['email_text_color'] ) && !empty( $instance['email_text_color'] )) ? ('color:'. $instance['email_text_color'] . ' !important;') : '';
-		$email_text_color_hover = (isset( $instance['email_text_color_hover'] ) && !empty( $instance['email_text_color_hover'] )) ? ('color:'. $instance['email_text_color_hover'] . ' !important;') : '';
-		$social_text_color = (isset( $instance['social_text_color'] ) && !empty( $instance['social_text_color'] )) ? ('color:'. $instance['social_text_color'] . ' !important;') : '';
-		$social_text_color_hover = (isset( $instance['social_text_color_hover'] ) && !empty( $instance['social_text_color_hover'] )) ? ('color:'. $instance['social_text_color_hover'] . ' !important;') : '';
-		$contact_text_color = (isset( $instance['contact_text_color'] ) && !empty( $instance['contact_text_color'] )) ? ('color:'. $instance['contact_text_color'] . ' !important;') : '';
-		$contact_text_color_hover = (isset( $instance['contact_text_color_hover'] ) && !empty( $instance['contact_text_color_hover'] )) ? ('color:'. $instance['contact_text_color_hover'] . ' !important;') : '';
-		$offer_text_color = (isset( $instance['offer_text_color'] ) && !empty( $instance['offer_text_color'] )) ? ('color:'. $instance['offer_text_color'] . ' !important;') : '';
-		$offer_text_color_hover = (isset( $instance['offer_text_color_hover'] ) && !empty( $instance['offer_text_color_hover'] )) ? ('color:'. $instance['offer_text_color_hover'] . ' !important;') : '';
-		
-		DirectoryPress_Static_Files::addGlobalStyle("
-		#{$id} .author-phone:not(.whatsapp) a{
-			{$phone_background}
-			{$phone_text_color}
+		if($instance_id){
+			$instance = $this->get_settings()[$instance_id];
+			$id = 'directorypress_author-'. $instance_id;
+			//var_dump($instance['phone_background']);
+			$phone_background = (isset( $instance['phone_background'] ) && !empty( $instance['phone_background'] )) ? ('background:'. $instance['phone_background'] . ';') : '';
+			$phone_background_hover = (isset( $instance['phone_background_hover'] ) && !empty( $instance['phone_background_hover'] )) ? ('background:'. $instance['phone_background_hover'] . ';') : '';
+			$whatsapp_background = (isset( $instance['whatsapp_background'] ) && !empty( $instance['whatsapp_background'] )) ? ('background:'. $instance['whatsapp_background'] . ';') : '';
+			$whatsapp_background_hover = (isset( $instance['whatsapp_background_hover'] ) && !empty( $instance['whatsapp_background_hover'] )) ? ('background:'. $instance['whatsapp_background_hover'] . ';') : '';
+			$email_background = (isset( $instance['email_background'] ) && !empty( $instance['email_background'] )) ? ('background:'. $instance['email_background'] . ';') : '';
+			$email_background_hover = (isset( $instance['email_background_hover'] ) && !empty( $instance['email_background_hover'] )) ? ('background:'. $instance['email_background_hover'] . ';') : '';
+			$social_background = (isset( $instance['social_background'] ) && !empty( $instance['social_background'] )) ? ('background:'. $instance['social_background'] . ';') : '';
+			$social_background_hover = (isset( $instance['social_background_hover'] ) && !empty( $instance['social_background_hover'] )) ? ('background:'. $instance['social_background_hover'] . ';') : '';
+			$contact_btn_background = (isset( $instance['contact_btn_background'] ) && !empty( $instance['contact_btn_background'] )) ? ('background:'. $instance['contact_btn_background'] . ';') : '';
+			$contact_btn_background_hover = (isset( $instance['contact_btn_background_hover'] ) && !empty( $instance['contact_btn_background_hover'] )) ? ('background:'. $instance['contact_btn_background_hover'] . ';') : '';
+			$offer_btn_background = (isset( $instance['offer_btn_background'] ) && !empty( $instance['offer_btn_background'] )) ? ('background:'. $instance['offer_btn_background'] . ';') : '';
+			$offer_btn_background_hover = (isset( $instance['offer_btn_background_hover'] ) && !empty( $instance['offer_btn_background_hover'] )) ? ('background:'. $instance['offer_btn_background_hover'] . ';') : '';
+			
+			$phone_text_color = (isset( $instance['phone_text_color'] ) && !empty( $instance['phone_text_color'] )) ? ('color:'. $instance['phone_text_color'] . ' !important;') : '';
+			$phone_text_color_hover = (isset( $instance['phone_text_color_hover'] ) && !empty( $instance['phone_text_color_hover'] )) ? ('color:'. $instance['phone_text_color_hover'] . ' !important;') : '';
+			$whatsapp_text_color = (isset( $instance['whatsapp_text_color'] ) && !empty( $instance['whatsapp_text_color'] )) ? ('color:'. $instance['whatsapp_text_color'] . ' !important;') : '';
+			$whatsapp_text_color_hover = (isset( $instance['whatsapp_text_color_hover'] ) && !empty( $instance['whatsapp_text_color_hover'] )) ? ('color:'. $instance['whatsapp_text_color_hover'] . ' !important;') : '';
+			$email_text_color = (isset( $instance['email_text_color'] ) && !empty( $instance['email_text_color'] )) ? ('color:'. $instance['email_text_color'] . ' !important;') : '';
+			$email_text_color_hover = (isset( $instance['email_text_color_hover'] ) && !empty( $instance['email_text_color_hover'] )) ? ('color:'. $instance['email_text_color_hover'] . ' !important;') : '';
+			$social_text_color = (isset( $instance['social_text_color'] ) && !empty( $instance['social_text_color'] )) ? ('color:'. $instance['social_text_color'] . ' !important;') : '';
+			$social_text_color_hover = (isset( $instance['social_text_color_hover'] ) && !empty( $instance['social_text_color_hover'] )) ? ('color:'. $instance['social_text_color_hover'] . ' !important;') : '';
+			$contact_text_color = (isset( $instance['contact_text_color'] ) && !empty( $instance['contact_text_color'] )) ? ('color:'. $instance['contact_text_color'] . ' !important;') : '';
+			$contact_text_color_hover = (isset( $instance['contact_text_color_hover'] ) && !empty( $instance['contact_text_color_hover'] )) ? ('color:'. $instance['contact_text_color_hover'] . ' !important;') : '';
+			$offer_text_color = (isset( $instance['offer_text_color'] ) && !empty( $instance['offer_text_color'] )) ? ('color:'. $instance['offer_text_color'] . ' !important;') : '';
+			$offer_text_color_hover = (isset( $instance['offer_text_color_hover'] ) && !empty( $instance['offer_text_color_hover'] )) ? ('color:'. $instance['offer_text_color_hover'] . ' !important;') : '';
+			
+			DirectoryPress_Static_Files::addGlobalStyle("
+			#{$id} .author-phone:not(.whatsapp) a{
+				{$phone_background}
+				{$phone_text_color}
+			}
+			#{$id} .author-phone:not(.whatsapp) a span{
+				{$phone_text_color}
+			}
+			#{$id} .author-phone:not(.whatsapp) a:hover{
+				{$phone_background_hover}
+				{$phone_text_color_hover}
+			}
+			#{$id} .author-phone:not(.whatsapp) a:hover span{
+				{$phone_text_color_hover}
+			}
+			#{$id} .author-phone.whatsapp a{
+				{$whatsapp_background}
+				{$whatsapp_text_color}
+			}
+			#{$id} .author-phone.whatsapp a span{
+				{$whatsapp_text_color}
+			}
+			#{$id} .author-phone.whatsapp a:hover span{
+				{$whatsapp_text_color_hover}
+			}
+			#{$id} .author-phone.whatsapp a:hover{
+				{$whatsapp_background_hover}
+				{$whatsapp_text_color_hover}
+			}
+			#{$id} .author-email-id{
+				{$email_background}
+				{$email_text_color}
+			}
+			#{$id} .author-email-id p{
+				{$email_text_color}
+			}
+			#{$id} .author-email-id:hover p{
+				{$email_text_color_hover}
+			}
+			#{$id} .author-email-id:hover{
+				{$email_background_hover}
+				{$email_text_color_hover}
+			}
+			#{$id} .author-social-follow-ul li a{
+				{$social_background}
+				{$social_text_color}
+			}
+			#{$id} .author-social-follow-ul li a:hover{
+				{$social_background_hover}
+				{$social_text_color_hover}
+			}
+			#{$id} .author-btn-holder a.author-contact-btn{
+				{$contact_btn_background}
+				{$contact_text_color}
+			}
+			#{$id} .author-btn-holder a.author-contact-btn:hover{
+				{$contact_btn_background_hover}
+				{$contact_text_color_hover}
+			}
+			#{$id} .author-btn-holder a.author-offer-btn{
+				{$offer_btn_background}
+				{$offer_text_color}
+			}
+			#{$id} .author-btn-holder a.author-offer-btn:hover{
+				{$offer_btn_background_hover}
+				{$offer_text_color_hover}
+			}
+			
+			");
 		}
-		#{$id} .author-phone:not(.whatsapp) a span{
-			{$phone_text_color}
-		}
-		#{$id} .author-phone:not(.whatsapp) a:hover{
-			{$phone_background_hover}
-			{$phone_text_color_hover}
-		}
-		#{$id} .author-phone:not(.whatsapp) a:hover span{
-			{$phone_text_color_hover}
-		}
-		#{$id} .author-phone.whatsapp a{
-			{$whatsapp_background}
-			{$whatsapp_text_color}
-		}
-		#{$id} .author-phone.whatsapp a span{
-			{$whatsapp_text_color}
-		}
-		#{$id} .author-phone.whatsapp a:hover span{
-			{$whatsapp_text_color_hover}
-		}
-		#{$id} .author-phone.whatsapp a:hover{
-			{$whatsapp_background_hover}
-			{$whatsapp_text_color_hover}
-		}
-		#{$id} .author-email-id{
-			{$email_background}
-			{$email_text_color}
-		}
-		#{$id} .author-email-id p{
-			{$email_text_color}
-		}
-		#{$id} .author-email-id:hover p{
-			{$email_text_color_hover}
-		}
-		#{$id} .author-email-id:hover{
-			{$email_background_hover}
-			{$email_text_color_hover}
-		}
-		#{$id} .author-social-follow-ul li a{
-			{$social_background}
-			{$social_text_color}
-		}
-		#{$id} .author-social-follow-ul li a:hover{
-			{$social_background_hover}
-			{$social_text_color_hover}
-		}
-		#{$id} .author-btn-holder a.author-contact-btn{
-			{$contact_btn_background}
-			{$contact_text_color}
-		}
-		#{$id} .author-btn-holder a.author-contact-btn:hover{
-			{$contact_btn_background_hover}
-			{$contact_text_color_hover}
-		}
-		#{$id} .author-btn-holder a.author-offer-btn{
-			{$offer_btn_background}
-			{$offer_text_color}
-		}
-		#{$id} .author-btn-holder a.author-offer-btn:hover{
-			{$offer_btn_background_hover}
-			{$offer_text_color_hover}
-		}
-		
-		");
 	}
 
 	function update( $new_instance, $old_instance ) {

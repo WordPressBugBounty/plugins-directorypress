@@ -59,12 +59,12 @@ class DirectoryPress {
 		if ( defined( 'DIRECTORYPRESS_VERSION' ) ) {
 			$this->version = DIRECTORYPRESS_VERSION;
 		}else{
-			$this->version = '3.6.20';
+			$this->version = '3.6.21';
 		}
 		$this->plugin_name = 'directorypress';
 		define("DIRECTORYPRESS_OPTIONS_BUILD", $this->plugin_name . '_dirctorypress_options_build');
 		$this->load_dependencies();
-		$this->set_locale();
+		
 		//$this->define_admin_hooks();
 		$this->define_public_hooks();
 
@@ -85,7 +85,7 @@ class DirectoryPress {
 
 		$plugin_i18n = new DirectoryPress_i18n();
 
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+		$this->loader->add_action( 'init', $plugin_i18n, 'load_plugin_textdomain' );
 
 	}
 	
@@ -112,8 +112,8 @@ class DirectoryPress {
 		if (isset($_REQUEST['directorypress_action'])) {
 			$this->action = sanitize_text_field($_REQUEST['directorypress_action']);
 		}
-
-		add_action('plugins_loaded', array($this, 'load_textdomains'));
+		$this->set_locale();
+		//add_action('plugins_loaded', array($this, 'load_textdomains'));
 
 		if (!isset($wpdb->directorypress_fields))
 			$wpdb->directorypress_fields = $wpdb->prefix . 'directorypress_fields';

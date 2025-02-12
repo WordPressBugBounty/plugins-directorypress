@@ -146,7 +146,7 @@ class directorypress_field_price extends directorypress_field {
 		$validation->set_rules($field_options, $this->name);
 		$validation->set_rules($field_frontend_currency, $this->name);
 		$validation->set_rules($range_options, $this->name);
-		if($data[$field_options] != 'oncall'){
+		if($validation->result_array($field_options) != 'oncall'){
 			$rules = 'numeric';
 			if ($this->is_this_field_requirable() && $this->is_required){
 				$rules .= '|required';
@@ -174,7 +174,9 @@ class directorypress_field_price extends directorypress_field {
 		//return update_post_meta($post_id, '_field_' . $this->id, $validation_results);
 		if ($validation_results && is_array($validation_results)) {
 			update_post_meta($post_id, '_field_' . $this->id, $validation_results['value']);
-			update_post_meta($post_id, '_field_' . $this->id . '_max', $validation_results['value_2']);
+			if(isset($validation_results['value_2'])){
+				update_post_meta($post_id, '_field_' . $this->id . '_max', $validation_results['value_2']);
+			}
 			update_post_meta($post_id, '_field_' . $this->id . '_range_options', $validation_results['range_options']);
 			update_post_meta($post_id, '_field_' . $this->id . '_option_selection', $validation_results['option_selection']);
 			update_post_meta($post_id, '_field_' . $this->id . '_frontend_currency', $validation_results['frontend_currency']);

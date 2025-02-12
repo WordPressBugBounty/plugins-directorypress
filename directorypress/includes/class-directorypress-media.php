@@ -400,8 +400,8 @@ class directorypress_media_handler {
 					if (function_exists('wpml_object_id_filter') && $sitepress) {
 						$attachment_id = apply_filters('wpml_object_id', $attachment_id, 'attachment', true);
 					}
-
-					wp_update_post(array('ID' => $attachment_id, 'post_title' => $validation_results['attached_image_title[]'][$key]));
+					$title = ($validation_results['attached_image_title[]'])? $validation_results['attached_image_title[]'][$key]:'';
+					wp_update_post(array('ID' => $attachment_id, 'post_title' => $title));
 				}
 			}
 

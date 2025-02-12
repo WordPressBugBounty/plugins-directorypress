@@ -77,6 +77,7 @@ function directorypress_redux_template_header_before(){
 							echo '<div class="directorypress-box-head">';
 								echo '<h1>'. esc_html__('DirectoryPress Settings', 'DIRECTORYPRESS').'</h1>';
 								echo '<p>'. esc_html__('All DirectoryPress Settings can be handle here', 'DIRECTORYPRESS').'</p>';
+								echo '<a href="https://www.youtube.com/@DesigninventoSupport/videos" target="_blank" style="width:200px;margin:40px auto 0;display:block;"><img src="'. esc_url(DIRECTORYPRESS_RESOURCES_URL .'images/vt.jpg') .'" alt="'. esc_attr__('tutorials', 'DIRECTORYPRESS') .'" /></a>';
 							echo '</div>';
 							echo '<div class="directorypress-box-content wp-clearfix">';
 		}

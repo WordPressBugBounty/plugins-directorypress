@@ -16,7 +16,7 @@ $actionn  = ( 'network' === $this->parent->args['database'] && $this->parent->ar
 $this->parent->options['last_tab'] = ( isset( $_GET['tab'] ) && ! isset( $this->parent->transients['last_save_mode'] ) ) ? sanitize_text_field( wp_unslash( $_GET['tab'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification
 
 ?>
-<?php do_action('pacz_reduxt_custom_header_before'); ?>
+<?php do_action('directorypress_reduxt_custom_header_before'); ?>
 	<div
 		class="redux-container<?php echo esc_attr( $expanded ); ?>">
 
@@ -50,4 +50,4 @@ $this->parent->options['last_tab'] = ( isset( $_GET['tab'] ) && ! isset( $this->
 			<?php $this->get_template( 'content.tpl.php' ); ?>
 		</form>
 	</div>
-<?php do_action('pacz_reduxt_custom_header_after'); ?>
+<?php do_action('directorypress_redux_template_header_after'); ?>
