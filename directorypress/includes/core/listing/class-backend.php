@@ -137,7 +137,7 @@ class directorypress_listings_admin {
 			echo "<p>". esc_html__('Renew listing first!', 'DIRECTORYPRESS')."</p>";
 			$renew_link = strip_tags(apply_filters('directorypress_renew_option', esc_html__('renew listing', 'DIRECTORYPRESS'), $listing));
 			if (isset($directorypress_object->dashboard_page_url) && $directorypress_object->dashboard_page_url)
-				echo '<br /><a href="' . esc_url(directorypress_dashboardUrl(array('directorypress_action' => 'renew_listing', 'listing_id' => $listing->post->ID))) . '"><span class="directorypress-field-icon directorypress-icon-refresh"></span>' . esc_html($renew_link) . '</a>';
+				echo '<br /><a href="' . esc_url(directorypress_dashboardUrl(array('directory_action' => 'renew_listing', 'listing_id' => $listing->post->ID))) . '"><span class="directorypress-field-icon directorypress-icon-refresh"></span>' . esc_html($renew_link) . '</a>';
 			else
 				echo '<br /><a href="' . esc_url(admin_url('options.php?page=directorypress_renew&listing_id=' . $listing->post->ID)) . '"><span class="directorypress-field-icon directorypress-icon-refresh"></span>' . esc_html($renew_link) . '</a>';
 		}

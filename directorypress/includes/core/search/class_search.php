@@ -165,7 +165,7 @@ class directorypress_search_form {
 		if (!$wp_rewrite->using_permalinks() && $directorypress_object->directorypress_archive_page_id && (get_option('show_on_front') != 'page' || get_option('page_on_front') != $directorypress_object->directorypress_archive_page_id))
 			$hidden_fields['page_id'] = $directorypress_object->directorypress_archive_page_id;
 		if ($directorypress_object->directorypress_archive_page_id)
-			$hidden_fields['directorypress_action'] = "search";
+			$hidden_fields['directory_action'] = "search";
 		else
 			$hidden_fields['s'] = "search";
 		if ($this->uid)

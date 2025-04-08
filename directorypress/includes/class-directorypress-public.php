@@ -451,7 +451,7 @@ function directorypress_address($args, $defaults = array(), $include_GET_params 
 add_filter('directorypress_search_args', 'directorypress_address', 10, 3);
 
 function directorypress_keywordInCategorySearch($keyword) {
-	if (directorypress_get_input_value($_REQUEST, 'directorypress_action') == 'search' && ($categories = array_filter(explode(',', directorypress_get_input_value($_REQUEST, 'categories')), 'trim')) && count($categories) == 1) {
+	if (directorypress_get_input_value($_REQUEST, 'directory_action') == 'search' && ($categories = array_filter(explode(',', directorypress_get_input_value($_REQUEST, 'categories')), 'trim')) && count($categories) == 1) {
 		if (!is_wp_error($category = get_term(array_pop($categories), DIRECTORYPRESS_CATEGORIES_TAX))) {
 			$keyword = trim(str_ireplace(htmlspecialchars_decode($category->name), '', $keyword));
 		}
@@ -461,7 +461,7 @@ function directorypress_keywordInCategorySearch($keyword) {
 add_filter('directorypress_search_param_what_search', 'directorypress_keywordInCategorySearch');
 
 function directorypress_addressInLocationSearch($address) {
-	if (directorypress_get_input_value($_REQUEST, 'directorypress_action') == 'search' && ($location_id = array_filter(explode(',', directorypress_get_input_value($_REQUEST, 'location_id')), 'trim')) && count($location_id) == 1) {
+	if (directorypress_get_input_value($_REQUEST, 'directory_action') == 'search' && ($location_id = array_filter(explode(',', directorypress_get_input_value($_REQUEST, 'location_id')), 'trim')) && count($location_id) == 1) {
 		if (!is_wp_error($location = get_term(array_pop($location_id), DIRECTORYPRESS_LOCATIONS_TAX))) {
 			$address = trim(str_ireplace(htmlspecialchars_decode($location->name), '', $address));
 		}
@@ -472,8 +472,8 @@ add_filter('directorypress_search_param_address', 'directorypress_addressInLocat
 
 function directorypress_base_url_args($args) {
 	global $DIRECTORYPRESS_ADIMN_SETTINGS;
-	if (isset($_REQUEST['directorypress_action']) && $_REQUEST['directorypress_action'] == 'search') {
-			$args['directorypress_action'] = 'search';
+	if (isset($_REQUEST['directory_action']) && $_REQUEST['directory_action'] == 'search') {
+			$args['directory_action'] = 'search';
 		if (isset($_REQUEST['what_search']) && $_REQUEST['what_search'])
 			$args['what_search'] = urlencode(sanitize_text_field($_REQUEST['what_search']));
 		if (isset($_REQUEST['address']) && $_REQUEST['address'])

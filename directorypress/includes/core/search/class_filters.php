@@ -214,7 +214,7 @@ class directorypress_search_fields {
 		$start_latitude = apply_filters('directorypress_search_param_start_latitude', $start_latitude);
 		$start_longitude = apply_filters('directorypress_search_param_start_longitude', $start_longitude);
 
-		if (directorypress_get_input_value($_REQUEST, 'directorypress_action') == 'search') {
+		if (directorypress_get_input_value($_REQUEST, 'directory_action') == 'search') {
 			if (!$address) {
 				$radius = 0;
 			}
@@ -402,7 +402,7 @@ class directorypress_search_fields {
 	}
 	
 	public function base_url_args($args) {
-		if (isset($_REQUEST['directorypress_action']) && $_REQUEST['directorypress_action'] == 'search') {
+		if (isset($_REQUEST['directory_action']) && $_REQUEST['directory_action'] == 'search') {
 			if (isset($_REQUEST['categories']) && $_REQUEST['categories'] && is_numeric($_REQUEST['categories']))
 				$args['categories'] = sanitize_text_field($_REQUEST['categories']);
 			if (isset($_REQUEST['radius']) && $_REQUEST['radius'] && is_numeric($_REQUEST['radius']))

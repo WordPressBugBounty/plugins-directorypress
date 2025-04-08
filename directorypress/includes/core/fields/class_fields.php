@@ -798,12 +798,15 @@ function directorypress_filter_field_fields($insert_update_args, $field, $array)
 		if ($sitepress->get_default_language() != ICL_LANGUAGE_CODE) {
 			if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['field_id'])) {
 				$field_id = sanitize_text_field($_GET['field_id']);
-				if ($name_string_id = icl_st_is_registered_string('DirectoryPress', 'field name #' . $field_id))
+				if ($name_string_id = icl_st_is_registered_string('DirectoryPress', 'field name #' . $field_id)){
 					icl_add_string_translation($name_string_id, ICL_LANGUAGE_CODE, $insert_update_args['name'], ICL_TM_COMPLETE);
-				if ($search_label_string_id = icl_st_is_registered_string('DirectoryPress', 'field search label #' . $field_id))
+				}
+				if ($search_label_string_id = icl_st_is_registered_string('DirectoryPress', 'field search label #' . $field_id)){
 					icl_add_string_translation($name_string_id, ICL_LANGUAGE_CODE, $insert_update_args['field_search_label'], ICL_TM_COMPLETE);
-				if ($description_string_id = icl_st_is_registered_string('DirectoryPress', 'field description #' . $field_id))
+				}
+				if ($description_string_id = icl_st_is_registered_string('DirectoryPress', 'field description #' . $field_id)){
 					icl_add_string_translation($description_string_id, ICL_LANGUAGE_CODE, $insert_update_args['description'], ICL_TM_COMPLETE);
+				}
 				unset($insert_update_args['name']);
 				unset($insert_update_args['field_search_label']);
 				unset($insert_update_args['description']);

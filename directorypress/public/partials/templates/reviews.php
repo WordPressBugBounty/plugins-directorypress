@@ -120,7 +120,7 @@
 				$comments_args = array(
 					'class_form' => 'clearfix',
 					'fields' => $fields,
-					'title_reply'=>'<div class="leave-comment-heading"><div>'.$comment_form_label.'</div></div>',
+					'title_reply'=>'<div class="leave-comment-heading"><div class="directorypress-new-review-heading">'.$comment_form_label.'</div></div>',
 					'comment_field' => '<div class="comment-textarea"><textarea placeholder="'.esc_html__('Your Comment', 'DIRECTORYPRESS').'" class="textarea" name="comment" rows="3" id="comment" tabindex="58"></textarea></div>',
 					'comment_notes_before' => '',
 					'comment_notes_after' => '',

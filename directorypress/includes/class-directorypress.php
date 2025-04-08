@@ -59,7 +59,7 @@ class DirectoryPress {
 		if ( defined( 'DIRECTORYPRESS_VERSION' ) ) {
 			$this->version = DIRECTORYPRESS_VERSION;
 		}else{
-			$this->version = '3.6.21';
+			$this->version = '3.6.22';
 		}
 		$this->plugin_name = 'directorypress';
 		define("DIRECTORYPRESS_OPTIONS_BUILD", $this->plugin_name . '_dirctorypress_options_build');
@@ -109,8 +109,8 @@ class DirectoryPress {
 	public function run() {
 		global $directorypress_object, $directorypress_shortcodes, $directorypress_google_maps_styles, $wpdb;
 
-		if (isset($_REQUEST['directorypress_action'])) {
-			$this->action = sanitize_text_field($_REQUEST['directorypress_action']);
+		if (isset($_REQUEST['directory_action'])) {
+			$this->action = sanitize_text_field($_REQUEST['directory_action']);
 		}
 		$this->set_locale();
 		//add_action('plugins_loaded', array($this, 'load_textdomains'));
@@ -860,7 +860,7 @@ class DirectoryPress {
 					$subject = esc_html__('Expiration notification', 'DIRECTORYPRESS');
 			
 					$body = str_replace('[listing]', $listing->title(),
-							str_replace('[link]', ((isset($this->dashboard_page_url) && $this->dashboard_page_url) ? directorypress_dashboardUrl(array('directorypress_action' => 'renew_listing', 'listing_id' => $post_id)) : admin_url('options.php?page=directorypress_renew&listing_id=' . $post_id)),
+							str_replace('[link]', ((isset($this->dashboard_page_url) && $this->dashboard_page_url) ? directorypress_dashboardUrl(array('directory_action' => 'renew_listing', 'listing_id' => $post_id)) : admin_url('options.php?page=directorypress_renew&listing_id=' . $post_id)),
 							$DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_expiration_notification']));
 					directorypress_mail($listing_owner->user_email, $subject, $body);
 					
@@ -941,7 +941,7 @@ class DirectoryPress {
 					
 					$body = str_replace('[listing]', $listing->title(),
 							str_replace('[days]', $DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_send_expiration_notification_days'],
-							str_replace('[link]', ((isset($this->dashboard_page_url) && $this->dashboard_page_url) ? directorypress_dashboardUrl(array('directorypress_action' => 'renew_listing', 'listing_id' => $listing_id)) : admin_url('options.php?page=directorypress_renew&listing_id=' . $listing_id)),
+							str_replace('[link]', ((isset($this->dashboard_page_url) && $this->dashboard_page_url) ? directorypress_dashboardUrl(array('directory_action' => 'renew_listing', 'listing_id' => $listing_id)) : admin_url('options.php?page=directorypress_renew&listing_id=' . $listing_id)),
 							$DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_preexpiration_notification'])));
 					directorypress_mail($listing_owner->user_email, $subject, $body);
 					

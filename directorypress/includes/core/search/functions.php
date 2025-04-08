@@ -28,8 +28,8 @@ function directorypress_get_search_term_id($query_var, $get_var, $default_term_i
 function directorypress_visible_search_param($param_text, $link) {
 	$parse_url = parse_url($link, PHP_URL_QUERY);
 	parse_str($parse_url, $parse_url_str);
-	if (count($parse_url_str) == 1 && directorypress_get_input_value($parse_url_str, 'directorypress_action') == 'search') {
-		$link = remove_query_arg('directorypress_action', $link);
+	if (count($parse_url_str) == 1 && directorypress_get_input_value($parse_url_str, 'directory_action') == 'search') {
+		$link = remove_query_arg('directory_action', $link);
 	} elseif ($use_advanced = directorypress_get_input_value($_REQUEST, 'use_advanced')) {
 		$link = add_query_arg('use_advanced', '1', $link);
 	}

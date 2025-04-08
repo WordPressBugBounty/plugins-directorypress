@@ -23,7 +23,7 @@ $tooltip = (!$button_text)? 'data-bs-toggle="tooltip" title="'.esc_attr__('Print
 			});
 		})(jQuery);
 	</script>
-	<a href="javascript:void(0);" class="print-button directorypress-print-listing-link btn button-style-<?php echo esc_attr($button_style); ?>" onClick="window.open('<?php echo esc_attr(add_query_arg('directorypress_action', 'printlisting', get_permalink($listing->post->ID))); ?>', 'print_window', 'height='+window_height+',width='+window_width+',left='+leftPosition+',top='+topPosition+',menubar=yes,scrollbars=yes');" <?php echo wp_kses_post($tooltip); ?>>
+	<a href="javascript:void(0);" class="print-button directorypress-print-listing-link btn button-style-<?php echo esc_attr($button_style); ?>" onClick="window.open('<?php echo esc_attr(add_query_arg('directory_action', 'printlisting', get_permalink($listing->post->ID))); ?>', 'print_window', 'height='+window_height+',width='+window_width+',left='+leftPosition+',top='+topPosition+',menubar=yes,scrollbars=yes');" <?php echo wp_kses_post($tooltip); ?>>
 		<?php
 			if(isset($DIRECTORYPRESS_ADIMN_SETTINGS['single_listing_button_print_icon_type']) && $DIRECTORYPRESS_ADIMN_SETTINGS['single_listing_button_print_icon_type'] == 'img'){
 				echo '<img src="'. esc_url($DIRECTORYPRESS_ADIMN_SETTINGS['single_listing_button_print_icon_url']) .'" alt="'. esc_attr__('Print', 'DIRECTORYPRESS') .'"/>';

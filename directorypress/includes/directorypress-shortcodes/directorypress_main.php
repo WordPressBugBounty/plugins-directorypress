@@ -451,7 +451,7 @@ class directorypress_directory_handler extends directorypress_public {
 				$directorypress_page_url = get_term_link($tterm, DIRECTORYPRESS_TAGS_TAX);
 			}
 			if ($this->is_favourites) {
-				$directorypress_page_url = directorypress_directorytype_url(array('directorypress_action' => 'myfavourites'));
+				$directorypress_page_url = directorypress_directorytype_url(array('directory_action' => 'myfavourites'));
 			}
 
 			// show links only to pages, which have translations
