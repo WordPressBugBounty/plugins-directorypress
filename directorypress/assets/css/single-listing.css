@@ -69,7 +69,7 @@
 	margin-top:30px;
 	background:#fff;
 	padding:30px;
-	border:1px solid #e3e5e8;
+	border:1px solid #eee;
 	border-radius:6px;
 }
 .single-listing #comments-reviews section#comments{
@@ -392,7 +392,7 @@
 	border-top:0 !important;
 	border-left:0!important;
 	border-right:0!important;
-	border-bottom: 1px solid #cdd9e2;
+	border-bottom: 1px solid #eee;
 	margin: 10px 0 !important;
 	padding: 6px 0 15px!important;
 	overflow: hidden;
@@ -547,8 +547,7 @@
 		right: 15px;
 	}
 	.directorypress-commentlist li .comment-time {
-		font-size: 11px;
-		margin: 0 0 0 10px;
+		
 	}
 }
 @media
@@ -564,7 +563,7 @@ only screen and (max-width: 480px) {
 	.single-listing .listing-id,
 	.single-listing .listing-views,
 	.single-location-address span {
-		font-size: 10px
+		
 	}
 	.listing-cat-single {
 		display: none
@@ -1457,7 +1456,7 @@ html.remodal-is-locked {
 	background:none;
 	padding: 12px 20px;
 	border-radius: 4px;
-	border:1px solid #cdd9e2;
+	border:1px solid #eee;
 }
 .directorypress-field-item.directorypress-field-type-hours{
 	width:100% !important;
@@ -1609,6 +1608,24 @@ div.directorypress-content-wrap .directorypress-field-item {
 		margin-left: 0;
 		margin-bottom: 10px
 	}
+	.single-listing #comments-reviews .comments-heading-label{
+		margin: 10px 0 20px 0;
+	}
+	div.directorypress-content-wrap .directorypress-field-item {
+		margin-top: 10px;
+	}
+	.single-listing .directorypress-field-item .field-label .directorypress-field-title {
+		font-size: 15px;
+	}
+	.single-listing .directorypress-single-listing-text-content-wrap .directorypress-fields-group-caption {
+		margin-bottom: 20px;
+	}
+	.directorypress-single-mobile-content-container .directorypress-commentlist li .comment-content {
+		padding: 20px;
+	}
+	.directorypress-single-mobile-content-container .directorypress-commentlist li .comment-meta {
+		padding: 15px 15px 0;
+	}
 }
 .directorypress-single-listing-logo-wrap {
 	margin-bottom: 30px
@@ -1746,7 +1763,7 @@ ul.directorypress-listing-tabs.nav {
 }
 .directorypress-single-listing-text-content-wrap .directorypress-fields-group.group-style-2 {
 	background: #fff;
-	border:1px solid #e3e5e8;
+	border:1px solid #eee;
 	border-radius:6px;
 }
 .single-listing .directorypress-label-primary {
@@ -1787,14 +1804,14 @@ ul.directorypress-listing-tabs.nav {
 	margin-top:4px;
 }
 .single-listing .directorypress-listing.default .listing-main-content {
-  padding: 28px 40px 20px;
+  padding: 28px 40px 28px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-color: #e3e5e8;
 }
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item {
 	background: #fff;
-	
+	margin-top: 30px;
 }
 .directorypress-listing.default .directorypress-single-listing-text-content-wrap .single-filed-wrapper .directorypress-field-item.directorypress-field-type-content,
 .single-listing.single-style2 .directorypress-single-listing-text-content-wrap .directorypress-field-item.directorypress-field-type-content,
@@ -1870,7 +1887,7 @@ ul.directorypress-listing-tabs.nav {
 }
 .single-listing .directorypress-single-listing-text-content-wrap .directorypress-fields-group-caption {
 	color:#222;
-	margin:0 !important;
+	margin-top: 30px;
 	font-size:18px;
 }
 
@@ -2004,7 +2021,7 @@ div.directorypress-content-wrap .wpcf7-form .wpcf7-submit:hover div.directorypre
 .directorypress-single-radius-style .single-listing .single-listing-tabs-wrapper{
     margin-top: 15px !important;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
 	overflow:hidden;
 }
 .directorypress-single-radius-style .directorypress-single-listing-logo-wrap {
@@ -2084,7 +2101,7 @@ div.directorypress-content-wrap .wpcf7-form .wpcf7-submit:hover div.directorypre
 .directorypress-listing-video-gallery-wrapper{
     background: #fff;
     padding: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     box-shadow: 0 0px 8px rgba(0,0,0,0.05);
 	margin-top:20px;
 }
@@ -2236,7 +2253,7 @@ div.directorypress-content-wrap .wpcf7-form .wpcf7-submit:hover div.directorypre
 .button-style-2, .single-listing-btns ul li a.button-style-2 {
   padding: 0 10px;
   color: #546b7e;
-  border: 2px solid #cfd9e0;
+  border: 1px solid #cfd9e0;
   font-size: 13px;
   border-radius: 4px;
   display: inline-block;
@@ -2387,7 +2404,7 @@ aside #directorypress_price-3.widget.directorypress_widget_price .directorypress
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	border: 1px solid #eee;
+	border: 1px solid #cfd9e0;
 	text-align: center;
 	margin-right: 10px;
 }
@@ -2402,7 +2419,7 @@ aside #directorypress_price-3.widget.directorypress_widget_price .directorypress
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	border: 1px solid #eee;
+	border: 1px solid #cfd9e0;
 	text-align: center;
 	margin-right: 10px;
 }
@@ -2613,10 +2630,10 @@ aside #directorypress_price-3.widget.directorypress_widget_price .directorypress
 	right: 0;
 }
 .directorypress-categories-widget .directorypress-parent-category a {
-	line-height: 36px
+	line-height: 38px
 }
 .directorypress-categories-widget .directorypress-parent-category a .cat-icon {
-	height: 45px;
+	height: 40px;
 	padding: 0
 }
 .directorypress-categories-widget .directorypress-parent-category a .cat-icon img.directorypress-field-icon {
@@ -2626,6 +2643,7 @@ aside #directorypress_price-3.widget.directorypress_widget_price .directorypress
 }
 .directorypress-categories-widget .cat-style-default .directorypress-categories-wrapper .directorypress-category-holder .directorypress-parent-category a .cat-icon img{
 	border-radius:0;
+	height: 40px;
 }
 /* review rattings */
 .comments-heading-label {
@@ -2648,12 +2666,6 @@ aside #directorypress_price-3.widget.directorypress_widget_price .directorypress
     position: relative;
     box-shadow: none;
     border-radius: 0;
-}
-.directorypress-commentlist li .comment-content {
-    padding: 30px;
-    background: #fff;
-	border: 1px solid #eee;
-	border-bottom: none;
 }
 .comment-content p {
     margin-bottom: 0;
@@ -2762,7 +2774,7 @@ aside #directorypress_price-3.widget.directorypress_widget_price .directorypress
 .directorypress-commentlist li .comment-content {
     padding: 30px 30px;
     background: #fff;
-    border: 1px solid #cdd9e2;
+    border: 1px solid #eee;
 }
 .comment-content p.dirrater_title {
     color: #333;
@@ -2808,7 +2820,7 @@ aside #directorypress_price-3.widget.directorypress_widget_price .directorypress
     color: #fcb541;
 }
 .comment-meta-main {
-  border: 1px solid #cdd9e2;
+  border: 1px solid #eee;
   border-top: 0;
 }
 .directorypress-commentlist li.bypostauthor .comment-meta-main {

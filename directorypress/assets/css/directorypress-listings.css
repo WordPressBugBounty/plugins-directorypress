@@ -836,6 +836,12 @@ only screen and (max-width: 480px) {
 	.directorypress-listing .directorypress-listing-item-holder .directorypress-listing-text-content-wrap .directorypress-listing-title h2 a {
 		font-size: 12px !important;
 	}
+	#directorypress-auhtor-page .directorypress-listing .directorypress-listing-item-holder .directorypress-listing-text-content-wrap .directorypress-listing-title h2 a {
+		font-size: 16px !important;
+	}
+	#directorypress-auhtor-page .directorypress-listing .directorypress-listing-item-holder .directorypress-listing-text-content-wrap .directorypress-listing-title h2{
+		margin:0;
+	}
 	
     	/* listings archive*/
     .listing-archive-content {
@@ -1440,7 +1446,6 @@ only screen and (max-width: 640px) {
 .directorypress_widget_author.widget {
     background: #fff;
     border: 1px solid #eee;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
     padding: 30px 30px;
 }
 
@@ -1516,11 +1521,11 @@ only screen and (max-width: 640px) {
     text-align: center;
     line-height: 42px;
     border-radius: 4px;
-    border:2px solid #cfd9e0;
+    border:1px solid #cfd9e0;
 }
 .author-social-follow-ul li a:hover{
 	color: #ffffff;
-	border: 2px solid #cfd9e000;
+	border: 1px solid #cfd9e000;
 }
 
 .author-social-follow-ul li a.twitter{
@@ -1864,17 +1869,17 @@ only screen and (max-width: 640px) {
 /* author widget style 2 */
 
 .directorypress_widget_author .directorypress-author.style2 .author-img{
-	display:block;
-	padding:5px;
-	background:#fff;
-	box-shadow: none;
-	width:126px;
-	float:none;
-	margin:0 auto 20px;
-	border-radius:50%;
-	overflow:hidden;
-	border:3px solid #dfe1e0;
-	height:126px;
+	display: block;
+  padding: 5px;
+  background: #fff;
+  box-shadow: none;
+  width: 120px;
+  float: none;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #eee;
+  height: 120px;
 }
 .directorypress_widget_author .directorypress-author.style2 .author-img img{
 	border-radius:50%;
@@ -1909,7 +1914,7 @@ only screen and (max-width: 640px) {
 	color:#fff;
 }
 .directorypress_widget_author .author-btns.style2 a {
-    border: 2px solid #cfd9e0;
+    border: 1px solid #cfd9e0;
     border-radius: 4px;
     text-transform: capitalize;
     font-size: 14px;
@@ -1928,7 +1933,7 @@ only screen and (max-width: 640px) {
 	text-align: center;
 	line-height: 29px;
 	font-size: 12px;
-	border: 2px solid #b7e5a6;
+	border: 1px solid #b7e5a6;
 	padding: 0 10px;
 	border-radius: 3px;
 	color: #6fcc4e;

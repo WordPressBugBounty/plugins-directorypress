@@ -52,7 +52,7 @@ $nav_items = array();
 				//if ((count($listing->videos) >= 1 && count($listing->images) >= 1) || count($listing->images) > 1){
 				if (count($listing->images) > 1){					
 					if ($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_enable_lighbox_gallery']){		
-						$items[] = '<div><a class="slide-link" href="' . esc_url($image_src) . '" data-lightbox="listing_images" title="images"><i class="dicode-material-icons dicode-material-icons-fullscreen"></i><img class="" data-lazy="' . esc_url($url) . '"  alt="images"/></a></div>';
+						$items[] = '<div><a class="slide-link" href="' . esc_url($image_src) . '" data-lightbox="listing_images" title="images"><i class="dicode-material-icons dicode-material-icons-fullscreen"></i><img data-lazy="' . esc_url($url) . '"  alt="images" /></a></div>';
 					}else{
 						$items[] = '<img class="slide-link" data-lazy="' . esc_url($url) . '"  alt="images"/><i class="dicode-material-icons dicode-material-icons-fullscreen"></i>';
 					}

@@ -528,7 +528,7 @@ div:not(.search-result) .search-form-style2.directorypress-content-wrap.director
 .search-checkbox-item {
 	width: 20px;
     height: 20px;
-    border: 2px solid #a0aab1;
+    border: 1px solid #e1e1e1;
     border-radius: 0;
     text-align: center;
 	position:absolute;

@@ -4,7 +4,7 @@ Donate link: https://designinvento.net/
 Tags: business directory, classified, car dealer, directories, directory listing
 Requires at least: 6.0
 Tested up to: 6.8.1
-Stable tag: 3.6.23
+Stable tag: 3.6.24
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -235,6 +235,13 @@ Yes DirectoryPress offer most robust front-end user panel with listing managemen
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+= 3.6.24 =
+* Security Improvement
+* Woocomerce compatibility checked.
+* Elementor comaptibility checked.
+* some styling issues fixed
+* minor fixes
+
 = 3.6.23 =
 * Security Improvement
 * Woocomerce compatibility checked.
