@@ -74,6 +74,24 @@ function directorypress_clean_summary($m) {
 
 	return $m[1] . $m[6];
 }
+function directorypress_excerpt($charlength) {
+      $excerpt = get_the_excerpt();
+      $charlength++;
+
+      if ( mb_strlen( $excerpt ) > $charlength ) {
+            $subex = mb_substr( $excerpt, 0, $charlength - 5 );
+            $exwords = explode( ' ', $subex );
+            $excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+            if ( $excut < 0 ) {
+                  echo mb_substr( $subex, 0, $excut );
+            } else {
+                  echo mb_substr( $excerpt, 0, $charlength - 5 );
+            }
+            echo '...';
+      } else {
+            echo wp_kses_post($excerpt);
+      }
+}
 
 function directorypress_is_reviews_allowed() {
 	global $DIRECTORYPRESS_ADIMN_SETTINGS;

@@ -46,7 +46,7 @@ $field_ids = $wpdb->get_results('SELECT id, type, slug, options FROM '.$wpdb->pr
 					<div class="single-listing-directory-btns clearfix">
 						<?php if(isset($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_ratings_addon']) && $DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_ratings_addon']): ?>
 							<div class="single-listing-rating">
-								<span class="rating-numbers"><?php echo esc_html(get_average_listing_rating($listing->post->ID)); ?></span>
+								<span class="rating-numbers"><?php echo wp_kses_post(get_average_listing_rating($listing->post->ID)); ?></span>
 								<span class="rating-stars"><?php display_average_listing_rating($listing->post->ID); ?></span>
 							</div>
 						<?php endif; ?>

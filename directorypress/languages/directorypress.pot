@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DirectoryPress Modified\n"
-"POT-Creation-Date: 2025-05-20 18:48+0500\n"
+"POT-Creation-Date: 2025-07-22 02:09+0500\n"
 "PO-Revision-Date: 2020-02-20 16:00+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -3275,7 +3275,7 @@ msgid "Press return or enter to open"
 msgstr ""
 
 #: admin/redux-core/inc/extensions/datetime/datetime/class-redux-datetime.php:147
-#: includes/core/listing/functions.php:326
+#: includes/core/listing/functions.php:344
 msgid "Date"
 msgstr ""
 
@@ -3302,7 +3302,7 @@ msgstr ""
 #: admin/redux-core/inc/extensions/google_maps/google_maps/class-redux-google-maps.php:185
 #: admin/redux-core/inc/fields/border/class-redux-border.php:106
 #: admin/redux-core/inc/fields/spacing/class-redux-spacing.php:167
-#: includes/core/listing/functions.php:396
+#: includes/core/listing/functions.php:414
 #: includes/core/search/filters/select/class-select.php:54
 #: includes/directorypress_vc_config.php:13
 msgid "All"
@@ -3558,7 +3558,7 @@ msgstr ""
 #: admin/redux-core/inc/extensions/social_profiles/social_profiles/inc/class-redux-social-profiles-widget.php:199
 #: admin/redux-core/inc/fields/slides/class-redux-slides.php:128
 #: admin/redux-core/inc/fields/slides/class-redux-slides.php:263
-#: includes/core/listing/functions.php:257 includes/core/listing/functions.php:327
+#: includes/core/listing/functions.php:275 includes/core/listing/functions.php:345
 #: includes/core/widgets/directorypress-widgets-author.php:246
 #: includes/core/widgets/directorypress_widget.php:11
 msgid "Title"
@@ -5219,7 +5219,7 @@ msgid "Fields order can be changed by drag & drop."
 msgstr ""
 
 #: includes/core/fields/_html/fields_backend.php:63
-#: includes/core/listing/functions.php:672
+#: includes/core/listing/functions.php:690
 #: includes/core/terms/categories-functions.php:276
 msgid "Close"
 msgstr ""
@@ -6321,100 +6321,100 @@ msgstr ""
 msgid "&#91;...&#93;"
 msgstr ""
 
-#: includes/core/listing/functions.php:206
+#: includes/core/listing/functions.php:224
 msgid "ratings"
 msgstr ""
 
-#: includes/core/listing/functions.php:249
+#: includes/core/listing/functions.php:267
 msgid "Sort By Date"
 msgstr ""
 
-#: includes/core/listing/functions.php:251 includes/core/listing/functions.php:330
+#: includes/core/listing/functions.php:269 includes/core/listing/functions.php:348
 msgid "Random"
 msgstr ""
 
-#: includes/core/listing/functions.php:254 includes/core/listing/functions.php:328
+#: includes/core/listing/functions.php:272 includes/core/listing/functions.php:346
 msgid "A-Z"
 msgstr ""
 
-#: includes/core/listing/functions.php:255 includes/core/listing/functions.php:329
+#: includes/core/listing/functions.php:273 includes/core/listing/functions.php:347
 msgid "Z-A"
 msgstr ""
 
-#: includes/core/listing/functions.php:319
+#: includes/core/listing/functions.php:337
 msgid "Order by: "
 msgstr ""
 
-#: includes/core/listing/functions.php:353 includes/directorypress_vc_config.php:821
+#: includes/core/listing/functions.php:371 includes/directorypress_vc_config.php:821
 msgid "Auto"
 msgstr ""
 
-#: includes/core/listing/functions.php:361
+#: includes/core/listing/functions.php:379
 msgid "Select Term"
 msgstr ""
 
-#: includes/core/listing/functions.php:369 includes/core/listing/functions.php:378
-#: includes/core/listing/functions.php:387
+#: includes/core/listing/functions.php:387 includes/core/listing/functions.php:396
+#: includes/core/listing/functions.php:405
 msgid "Select All"
 msgstr ""
 
-#: includes/core/listing/functions.php:378
+#: includes/core/listing/functions.php:396
 msgid "No Field"
 msgstr ""
 
-#: includes/core/listing/functions.php:436
+#: includes/core/listing/functions.php:454
 msgid "Previous Line"
 msgstr ""
 
-#: includes/core/listing/functions.php:439
+#: includes/core/listing/functions.php:457
 msgid "Previous Page"
 msgstr ""
 
-#: includes/core/listing/functions.php:452
+#: includes/core/listing/functions.php:470
 msgid "Next Page"
 msgstr ""
 
-#: includes/core/listing/functions.php:455
+#: includes/core/listing/functions.php:473
 msgid "Next Line"
 msgstr ""
 
-#: includes/core/listing/functions.php:465
+#: includes/core/listing/functions.php:483
 msgid "Load More"
 msgstr ""
 
-#: includes/core/listing/functions.php:528
+#: includes/core/listing/functions.php:546
 #, php-format
 msgid "Share on %s"
 msgstr ""
 
-#: includes/core/listing/functions.php:603
+#: includes/core/listing/functions.php:621
 msgid "Admin Docs"
 msgstr ""
 
-#: includes/core/listing/functions.php:613
+#: includes/core/listing/functions.php:631
 msgid "This information is only visible to Admin"
 msgstr ""
 
-#: includes/core/listing/functions.php:667
+#: includes/core/listing/functions.php:685
 msgid "Help Docs For Admin"
 msgstr ""
 
-#: includes/core/listing/functions.php:736
+#: includes/core/listing/functions.php:754
 #: includes/elementor/directorypress-listing.php:118
 msgid "List View"
 msgstr ""
 
-#: includes/core/listing/functions.php:739
+#: includes/core/listing/functions.php:757
 #: includes/elementor/directorypress-listing.php:117
 msgid "Grid View"
 msgstr ""
 
-#: includes/core/listing/functions.php:776
+#: includes/core/listing/functions.php:794
 #, php-format
 msgid "%s Result Found"
 msgstr ""
 
-#: includes/core/listing/functions.php:782
+#: includes/core/listing/functions.php:800
 msgid "Result Found"
 msgstr ""
 

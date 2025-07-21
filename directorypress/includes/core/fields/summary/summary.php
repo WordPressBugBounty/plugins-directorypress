@@ -29,7 +29,7 @@ class directorypress_field_summary extends directorypress_field {
 	public function display_outputValue($listing) {
 		global $DIRECTORYPRESS_ADIMN_SETTINGS;
 		$field = $this;
-		the_excerpt_max_charlength($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_excerpt_length']);
+		directorypress_excerpt($DIRECTORYPRESS_ADIMN_SETTINGS['directorypress_excerpt_length']);
 	}
 	
 	public function disaply_output_on_map($location, $listing) {
